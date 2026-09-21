@@ -1,0 +1,6 @@
+_group,N,outcome,grouping,log_rank_p
+Bosutinib,17,Overall survival,TKI group,0.07253179159073649
+Dasatinib,54,Overall survival,TKI group,0.07253179159073649
+Imatinib,71,Overall survival,TKI group,0.07253179159073649
+Nilotinib,42,Overall survival,TKI group,0.07253179159073649
+ponatinib,30,Overall survival,TKI group,0.07253179159073649

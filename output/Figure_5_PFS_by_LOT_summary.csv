@@ -1,0 +1,3 @@
+_group,N,outcome,grouping,log_rank_p
+First-line TKI,160,Progression-free survival,Line of Therapy,0.06426231841930428
+Subsequent-line TKI,54,Progression-free survival,Line of Therapy,0.06426231841930428

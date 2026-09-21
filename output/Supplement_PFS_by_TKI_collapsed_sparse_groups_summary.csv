@@ -1,0 +1,6 @@
+_group,N,outcome,grouping,log_rank_p
+Bosutinib,17,Progression-free survival,TKI group,0.35300727773996576
+Dasatinib,54,Progression-free survival,TKI group,0.35300727773996576
+Imatinib,71,Progression-free survival,TKI group,0.35300727773996576
+Nilotinib,42,Progression-free survival,TKI group,0.35300727773996576
+ponatinib,30,Progression-free survival,TKI group,0.35300727773996576

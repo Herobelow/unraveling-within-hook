@@ -1,0 +1,4 @@
+_group,N,outcome,grouping,log_rank_p
+Accelerated,23,Overall survival,Phase of CML,8.802635113563393e-55
+Blast,13,Overall survival,Phase of CML,8.802635113563393e-55
+Chronic,178,Overall survival,Phase of CML,8.802635113563393e-55

@@ -1,0 +1,3 @@
+_group,N,outcome,grouping,log_rank_p
+First-line TKI,160,Overall survival,Line of Therapy,0.25165121400285745
+Subsequent-line TKI,54,Overall survival,Line of Therapy,0.25165121400285745

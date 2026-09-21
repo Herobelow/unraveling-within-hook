@@ -1,0 +1,4 @@
+_group,N,outcome,grouping,log_rank_p
+Accelerated,23,Progression-free survival,Phase of CML,1.4462535299915657e-82
+Blast,13,Progression-free survival,Phase of CML,1.4462535299915657e-82
+Chronic,178,Progression-free survival,Phase of CML,1.4462535299915657e-82
