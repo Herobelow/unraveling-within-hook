@@ -1,0 +1,13 @@
+Check,Present,Missing_Values,Levels
+TKI Used,True,1,
+Phase of CML,True,0,
+Gender,True,0,
+Age,True,0,
+OS_Time_Months,True,0,
+OS_Event,True,0,
+PFS_Time_Months,True,0,
+PFS_Event,True,0,
+Grade_3_ADR,True,0,
+Levels: TKI Used,True,1,"Bosutinib, Dasatinib, Imatinib, Nilotinib, ponatinib"
+Levels: Phase of CML,True,0,"Accelerated, Blast, Chronic"
+Levels: Grade_3_ADR,True,0,"No, Not applicable, Not documented, Yes"
