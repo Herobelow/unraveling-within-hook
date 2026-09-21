@@ -1,0 +1,11 @@
+{
+  "_comment": "Default watchlist: top gaming Shorts channels. channel_id is pre-resolved; delete it and the tool will re-resolve from the handle. Swap in your own competitors freely.",
+  "channels": [
+    { "name": "IShowSpeed", "handle": "ishowspeed", "channel_id": "UCWsDFcIhY2DBi3GB5uykGXA", "label": "variety / challenge shorts" },
+    { "name": "KreekCraft", "handle": "KreekCraft", "channel_id": "UCxsk7hqE_CwZWGEJEkGanbA", "label": "Roblox news & reactions" },
+    { "name": "CaseOh", "handle": "CaseOh_", "channel_id": "UC63anZxfVGHUEmfBAf5w7pw", "label": "horror mods / funny moments" },
+    { "name": "SypherPK", "handle": "SypherPK", "channel_id": "UC_q5WZtFp36adwqhKpZzxwQ", "label": "Fortnite" },
+    { "name": "Jynxzi", "handle": "Jynxzi", "channel_id": "UCjiXtODGCCulmhwypZAWSag", "label": "Rainbow Six Siege" },
+    { "name": "Dream", "handle": "Dream", "channel_id": "UCTkXRDQl0luXxVQrRQvWS6w", "label": "Minecraft evergreen shorts" }
+  ]
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gaming Shorts Tracker — momentum & 2-week outlook</title>
+<style>
+  :root{--bg:#0d1117;--card:#161b22;--edge:#30363d;--txt:#e6edf3;--dim:#8b949e;
+        --hot:#f85149;--surge:#3fb950;--warm:#d29922;--cool:#58a6ff;--accent:#bc8cff}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;padding:28px 18px 60px}
+  .wrap{max-width:1080px;margin:0 auto}
+  h1{font-size:26px;letter-spacing:-.5px} h1 span{color:var(--accent)}
+  .sub{color:var(--dim);margin:6px 0 22px;font-size:14px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px}
+  .card{background:var(--card);border:1px solid var(--edge);border-radius:12px;padding:16px 18px}
+  .card h2{font-size:17px;display:flex;align-items:center;justify-content:space-between;gap:8px}
+  .pill{font-size:11px;font-weight:700;letter-spacing:.6px;padding:3px 9px;border-radius:999px;white-space:nowrap}
+  .SURGING{background:#12351c;color:var(--surge)} .HOT{background:#3a2b0e;color:var(--warm)}
+  .STEADY{background:#12253a;color:var(--cool)} .COOLING{background:#331c1c;color:var(--hot)}
+  .label{color:var(--dim);font-size:12.5px;margin:2px 0 12px}
+  .kv{display:flex;justify-content:space-between;font-size:13.5px;padding:3px 0}
+  .kv b{font-variant-numeric:tabular-nums}
+  .bar{height:6px;border-radius:4px;background:#21262d;margin-top:10px;overflow:hidden}
+  .bar i{display:block;height:100%;border-radius:4px;background:linear-gradient(90deg,#bc8cff,#3fb950)}
+  table{width:100%;border-collapse:collapse;margin-top:10px;font-size:13.5px}
+  th{color:var(--dim);text-align:left;font-size:11.5px;letter-spacing:.8px;text-transform:uppercase;padding:8px 10px;border-bottom:1px solid var(--edge)}
+  td{padding:8px 10px;border-bottom:1px solid #21262d;font-variant-numeric:tabular-nums}
+  tr:hover td{background:#1c2129}
+  td a{color:var(--txt);text-decoration:none} td a:hover{color:var(--accent)}
+  .score{font-weight:700;color:var(--accent)}
+  section{margin-top:34px} section h2{font-size:20px;margin-bottom:12px}
+  .foot{color:var(--dim);font-size:12.5px;margin-top:30px;line-height:1.7}
+  .calendar li{margin:7px 0 7px 18px} .calendar b{color:var(--accent)}
+  @media(max-width:640px){td,th{padding:6px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>🎮 Gaming Shorts <span>momentum tracker</span></h1>
+  <div class="sub" id="meta">loading…</div>
+
+  <section style="margin-top:0">
+    <h2>Channel momentum</h2>
+    <div class="grid" id="cards"></div>
+  </section>
+
+  <section>
+    <h2>Top shorts right now (by momentum score)</h2>
+    <div class="card" style="overflow-x:auto">
+      <table>
+        <thead><tr><th>Score</th><th>Short</th><th>Channel</th><th>Views</th><th>Views/day</th><th>Age</th></tr></thead>
+        <tbody id="lb"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>Why these may keep climbing — next 14 days</h2>
+    <div class="card"><ul class="calendar" id="cal"></ul></div>
+  </section>
+
+  <p class="foot" id="foot"></p>
+</div>
+
+<script>window.SHORTS_DATA = {"generated_at": "2026-09-21T18:30:00+00:00", "timezone": "Africa/Nairobi", "method": "RSS + ReturnYouTubeDislike (no API key)", "disclaimer": "Momentum scores and 14-day projections are heuristic linear extrapolations of observed views/day — not guarantees.", "channels": [{"name": "IShowSpeed", "handle": "ishowspeed", "label": "variety / challenge shorts", "channel_id": "UCWsDFcIhY2DBi3GB5uykGXA", "shorts": [{"id": "0J6NW3kgdd0", "title": "APPLE SENT ME THE NEW IPHONE 18", "published": "2026-09-19T22:20:29+00:00", "views": 4155768, "likes": 235121, "age_days": 1.84, "views_per_day": 2258641, "like_rate": 0.05658, "score": 98.8, "url": "https://www.youtube.com/shorts/0J6NW3kgdd0"}, {"id": "3Y93InnRp8U", "title": "Eat The Hot Wing, Win $$$$", "published": "2026-09-13T18:13:46+00:00", "views": 1720528, "likes": 73418, "age_days": 8.01, "views_per_day": 214763, "like_rate": 0.04267, "score": 84.9, "url": "https://www.youtube.com/shorts/3Y93InnRp8U"}, {"id": "dm-ISSgW_-k", "title": "ROCK PAPER SCISSORS KFC CHALLENGE!!", "published": "2026-09-11T11:00:01+00:00", "views": 8120979, "likes": 302365, "age_days": 10.31, "views_per_day": 787490, "like_rate": 0.03723, "score": 85.8, "url": "https://www.youtube.com/shorts/dm-ISSgW_-k"}], "metrics": {"momentum": 91.0, "status": "SURGING", "shorts_per_week": 1.1, "median_views_per_day": 787490, "projection_14d_per_short": 11024860, "best_short": {"id": "dm-ISSgW_-k", "title": "ROCK PAPER SCISSORS KFC CHALLENGE!!", "published": "2026-09-11T11:00:01+00:00", "views": 8120979, "likes": 302365, "age_days": 10.31, "views_per_day": 787490, "like_rate": 0.03723, "score": 85.8, "url": "https://www.youtube.com/shorts/dm-ISSgW_-k"}}}, {"name": "KreekCraft", "handle": "KreekCraft", "label": "Roblox news & reactions", "channel_id": "UCxsk7hqE_CwZWGEJEkGanbA", "shorts": [{"id": "H_7xo6l9elw", "title": "roblox is fixing faces 🙏😭", "published": "2026-09-21T20:07:00+00:00", "views": 25931, "likes": 1716, "age_days": 0.02, "views_per_day": 1296550, "like_rate": 0.06618, "score": 100.0, "url": "https://www.youtube.com/shorts/H_7xo6l9elw"}, {"id": "2n1rIXEeybM", "title": "kids can't play roblox anymore 😭", "published": "2026-09-20T20:30:23+00:00", "views": 1097490, "likes": 26200, "age_days": 0.92, "views_per_day": 1197610, "like_rate": 0.02387, "score": 86.3, "url": "https://www.youtube.com/shorts/2n1rIXEeybM"}, {"id": "E1WrTaRYBus", "title": "ROBLOX BANS GOT WORSE 💀", "published": "2026-09-18T22:50:34+00:00", "views": 426992, "likes": 9980, "age_days": 2.82, "views_per_day": 151467, "like_rate": 0.02337, "score": 77.3, "url": "https://www.youtube.com/shorts/E1WrTaRYBus"}], "metrics": {"momentum": 91.5, "status": "SURGING", "shorts_per_week": 3.7, "median_views_per_day": 1197610, "projection_14d_per_short": 16766540, "best_short": {"id": "2n1rIXEeybM", "title": "kids can't play roblox anymore 😭", "published": "2026-09-20T20:30:23+00:00", "views": 1097490, "likes": 26200, "age_days": 0.92, "views_per_day": 1197610, "like_rate": 0.02387, "score": 86.3, "url": "https://www.youtube.com/shorts/2n1rIXEeybM"}}}, {"name": "CaseOh", "handle": "CaseOh_", "label": "horror mods / funny moments", "channel_id": "UC63anZxfVGHUEmfBAf5w7pw", "shorts": [{"id": "I04w2SQxZ_Y", "title": "CaseOh Gets PRESSED By Minecraft Villagers!", "published": "2026-09-21T01:00:25+00:00", "views": 65631, "likes": 5149, "age_days": 0.73, "views_per_day": 90044, "like_rate": 0.07845, "score": 89.9, "url": "https://www.youtube.com/shorts/I04w2SQxZ_Y"}, {"id": "8Pw1097TABI", "title": "CaseOh Is Almost PUSHED To His Death!", "published": "2026-09-20T01:00:14+00:00", "views": 81071, "likes": 6487, "age_days": 1.73, "views_per_day": 46889, "like_rate": 0.08002, "score": 86.7, "url": "https://www.youtube.com/shorts/8Pw1097TABI"}, {"id": "Cb11JWFrKrw", "title": "CaseOh Falls Into The Backrooms In Minecraft!", "published": "2026-09-19T01:00:22+00:00", "views": 112893, "likes": 7377, "age_days": 2.73, "views_per_day": 41369, "like_rate": 0.06535, "score": 85.5, "url": "https://www.youtube.com/shorts/Cb11JWFrKrw"}], "metrics": {"momentum": 94.4, "status": "SURGING", "shorts_per_week": 7.0, "median_views_per_day": 46889, "projection_14d_per_short": 656446, "best_short": {"id": "Cb11JWFrKrw", "title": "CaseOh Falls Into The Backrooms In Minecraft!", "published": "2026-09-19T01:00:22+00:00", "views": 112893, "likes": 7377, "age_days": 2.73, "views_per_day": 41369, "like_rate": 0.06535, "score": 85.5, "url": "https://www.youtube.com/shorts/Cb11JWFrKrw"}}}, {"name": "SypherPK", "handle": "SypherPK", "label": "Fortnite", "channel_id": "UC_q5WZtFp36adwqhKpZzxwQ", "shorts": [{"id": "x5InlP4XxYg", "title": "Who's Your Most Famous Contact?", "published": "2026-09-21T17:00:27+00:00", "views": 37033, "likes": 2668, "age_days": 0.06, "views_per_day": 595506, "like_rate": 0.07204, "score": 97.9, "url": "https://www.youtube.com/shorts/x5InlP4XxYg"}, {"id": "5-FBl3NV4Aw", "title": "It's finally here!", "published": "2026-09-18T22:00:29+00:00", "views": 39059, "likes": 1124, "age_days": 2.85, "views_per_day": 13687, "like_rate": 0.02878, "score": 70.4, "url": "https://www.youtube.com/shorts/5-FBl3NV4Aw"}, {"id": "vuYiS-kEirE", "title": "Fortnite added THIS for Ali-A!", "published": "2026-09-17T22:00:40+00:00", "views": 899966, "likes": 16776, "age_days": 3.85, "views_per_day": 233533, "like_rate": 0.01864, "score": 76.0, "url": "https://www.youtube.com/shorts/vuYiS-kEirE"}], "metrics": {"momentum": 83.9, "status": "SURGING", "shorts_per_week": 2.5, "median_views_per_day": 233533, "projection_14d_per_short": 3269462, "best_short": {"id": "vuYiS-kEirE", "title": "Fortnite added THIS for Ali-A!", "published": "2026-09-17T22:00:40+00:00", "views": 899966, "likes": 16776, "age_days": 3.85, "views_per_day": 233533, "like_rate": 0.01864, "score": 76.0, "url": "https://www.youtube.com/shorts/vuYiS-kEirE"}}}, {"name": "Jynxzi", "handle": "Jynxzi", "label": "Rainbow Six Siege", "channel_id": "UCjiXtODGCCulmhwypZAWSag", "shorts": [{"id": "8PfLce78M4o", "title": "Jynxzi has mic drift 😭", "published": "2026-09-02T15:48:12+00:00", "views": 419000, "likes": null, "age_days": 19.11, "views_per_day": 21923, "like_rate": null, "score": 59.7, "url": "https://www.youtube.com/shorts/8PfLce78M4o"}, {"id": "O_DHiF0Me3w", "title": "Jynxzi Reacts to Kali Rework 😭", "published": "2026-08-16T22:15:12+00:00", "views": 824000, "likes": null, "age_days": 35.84, "views_per_day": 22989, "like_rate": null, "score": 47.2, "url": "https://www.youtube.com/shorts/O_DHiF0Me3w"}, {"id": "ld5Tv61_BEo", "title": "Bro did not say flash warning😭", "published": "2026-08-16T16:50:30+00:00", "views": 1700000, "likes": null, "age_days": 36.07, "views_per_day": 47132, "like_rate": null, "score": 50.6, "url": "https://www.youtube.com/shorts/ld5Tv61_BEo"}], "metrics": {"momentum": 60.1, "status": "HOT", "shorts_per_week": 0.4, "median_views_per_day": 21923, "projection_14d_per_short": 306922, "best_short": {"id": "ld5Tv61_BEo", "title": "Bro did not say flash warning😭", "published": "2026-08-16T16:50:30+00:00", "views": 1700000, "likes": null, "age_days": 36.07, "views_per_day": 47132, "like_rate": null, "score": 50.6, "url": "https://www.youtube.com/shorts/ld5Tv61_BEo"}}}, {"name": "Dream", "handle": "Dream", "label": "Minecraft evergreen shorts", "channel_id": "UCTkXRDQl0luXxVQrRQvWS6w", "shorts": [{"id": "G9I2qfuXIIg", "title": "Peaceful Mode...", "published": "2026-05-11T13:04:05+00:00", "views": 2700000, "likes": null, "age_days": 133.23, "views_per_day": 20266, "like_rate": null, "score": 46.7, "url": "https://www.youtube.com/shorts/G9I2qfuXIIg"}, {"id": "t3Urp8qh3QM", "title": "Traffic Jams Explained In Minecraft", "published": "2026-05-03T10:47:29+00:00", "views": 3300000, "likes": null, "age_days": 141.32, "views_per_day": 23351, "like_rate": null, "score": 47.3, "url": "https://www.youtube.com/shorts/t3Urp8qh3QM"}, {"id": "PgGj6WKcf5w", "title": "What Armor Is The Best?", "published": "2026-04-17T21:19:51+00:00", "views": 8000000, "likes": null, "age_days": 156.88, "views_per_day": 50994, "like_rate": null, "score": 51.0, "url": "https://www.youtube.com/shorts/PgGj6WKcf5w"}], "metrics": {"momentum": 43.9, "status": "STEADY · dormant", "shorts_per_week": 0.4, "median_views_per_day": 23351, "projection_14d_per_short": 326914, "best_short": {"id": "PgGj6WKcf5w", "title": "What Armor Is The Best?", "published": "2026-04-17T21:19:51+00:00", "views": 8000000, "likes": null, "age_days": 156.88, "views_per_day": 50994, "like_rate": null, "score": 51.0, "url": "https://www.youtube.com/shorts/PgGj6WKcf5w"}}}], "leaderboard": [{"channel": "KreekCraft", "id": "H_7xo6l9elw", "title": "roblox is fixing faces 🙏😭", "views": 25931, "views_per_day": 1296550, "score": 100.0, "age_days": 0.02, "url": "https://www.youtube.com/shorts/H_7xo6l9elw"}, {"channel": "IShowSpeed", "id": "0J6NW3kgdd0", "title": "APPLE SENT ME THE NEW IPHONE 18", "views": 4155768, "views_per_day": 2258641, "score": 98.8, "age_days": 1.84, "url": "https://www.youtube.com/shorts/0J6NW3kgdd0"}, {"channel": "SypherPK", "id": "x5InlP4XxYg", "title": "Who's Your Most Famous Contact?", "views": 37033, "views_per_day": 595506, "score": 97.9, "age_days": 0.06, "url": "https://www.youtube.com/shorts/x5InlP4XxYg"}, {"channel": "CaseOh", "id": "I04w2SQxZ_Y", "title": "CaseOh Gets PRESSED By Minecraft Villagers!", "views": 65631, "views_per_day": 90044, "score": 89.9, "age_days": 0.73, "url": "https://www.youtube.com/shorts/I04w2SQxZ_Y"}, {"channel": "CaseOh", "id": "8Pw1097TABI", "title": "CaseOh Is Almost PUSHED To His Death!", "views": 81071, "views_per_day": 46889, "score": 86.7, "age_days": 1.73, "url": "https://www.youtube.com/shorts/8Pw1097TABI"}, {"channel": "KreekCraft", "id": "2n1rIXEeybM", "title": "kids can't play roblox anymore 😭", "views": 1097490, "views_per_day": 1197610, "score": 86.3, "age_days": 0.92, "url": "https://www.youtube.com/shorts/2n1rIXEeybM"}, {"channel": "IShowSpeed", "id": "dm-ISSgW_-k", "title": "ROCK PAPER SCISSORS KFC CHALLENGE!!", "views": 8120979, "views_per_day": 787490, "score": 85.8, "age_days": 10.31, "url": "https://www.youtube.com/shorts/dm-ISSgW_-k"}, {"channel": "CaseOh", "id": "Cb11JWFrKrw", "title": "CaseOh Falls Into The Backrooms In Minecraft!", "views": 112893, "views_per_day": 41369, "score": 85.5, "age_days": 2.73, "url": "https://www.youtube.com/shorts/Cb11JWFrKrw"}, {"channel": "IShowSpeed", "id": "3Y93InnRp8U", "title": "Eat The Hot Wing, Win $$$$", "views": 1720528, "views_per_day": 214763, "score": 84.9, "age_days": 8.01, "url": "https://www.youtube.com/shorts/3Y93InnRp8U"}, {"channel": "KreekCraft", "id": "E1WrTaRYBus", "title": "ROBLOX BANS GOT WORSE 💀", "views": 426992, "views_per_day": 151467, "score": 77.3, "age_days": 2.82, "url": "https://www.youtube.com/shorts/E1WrTaRYBus"}]};</script>
+<script>
+(function(){
+  const D = window.SHORTS_DATA;
+  if(!D){document.getElementById('meta').textContent='No data.js found — run shorts_tracker.py first.';return;}
+  document.getElementById('meta').textContent =
+    'Snapshot ' + (D.generated_at||'').slice(0,16).replace('T',' ') + ' (' + (D.timezone||'UTC') + ') · '
+    + D.channels.length + ' channels · no-API-key data (Shorts RSS + public stats)';
+
+  const rank = [...D.channels].sort((a,b)=>b.metrics.momentum-a.metrics.momentum);
+  document.getElementById('cards').innerHTML = rank.map(c=>{
+    const m=c.metrics;
+    return '<div class="card"><h2>'+c.name+' <span class="pill '+m.status.split(' ')[0]+'">'+m.status+'</span></h2>'
+      +'<div class="label">'+(c.label||'')+'</div>'
+      +'<div class="kv"><span>Momentum score</span><b>'+m.momentum+'/100</b></div>'
+      +'<div class="kv"><span>Median views/day</span><b>'+fmt(m.median_views_per_day)+'</b></div>'
+      +'<div class="kv"><span>Naive 14-day projection / short</span><b>'+fmt(m.projection_14d_per_short)+' views</b></div>'
+      +'<div class="kv"><span>Cadence</span><b>'+m.shorts_per_week+' shorts/wk</b></div>'
+      +'<div class="kv"><span>Best recent short</span><b style="max-width:55%;text-align:right;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'+esc((m.best_short||{}).title||'-')+'</b></div>'
+      +'<div class="bar"><i style="width:'+Math.min(100,m.momentum)+'%"></i></div></div>';
+  }).join('');
+
+  const lb=(D.leaderboard||[]);
+  document.getElementById('lb').innerHTML = lb.map(s=>
+    '<tr><td class="score">'+s.score+'</td>'
+    +'<td><a href="'+s.url+'" target="_blank" rel="noopener">'+esc(s.title)+'</a></td>'
+    +'<td>'+esc(s.channel)+'</td><td>'+fmt(s.views)+'</td><td>'+fmt(s.views_per_day)+'</td><td>'+s.age_days+'d</td></tr>'
+  ).join('') || '<tr><td colspan="6">no data</td></tr>';
+
+  const cal=[
+    ['Sep 26 — Minecraft Live 2026','New update + Dungeons 2 news: Minecraft short-form (mods, builds, myths) gets a fresh topic wave within days.'],
+    ['Oct 1 — Fortnite v42.30 (Fortnitemares 2026)','Halloween event launch: skins, map changes, quests → spike in Fortnite shorts (see SypherPK format).'],
+    ['Early Oct — Brawl Stars: new brawler Vince + Brawl-O-Ween season','Monthly brawler drop + Halloween season; mobile-gaming shorts perform strongly in Africa/KE.'],
+    ['Ongoing — Roblox news cycle','EU kids-ban debate, ads in app, guests return, classic theme: reaction/news shorts are printing views (KreekCraft model).'],
+    ['Ramping — GTA 6 (Nov 19 launch)','"Can I play GTA 6 on my ___" meme + countdown/breakdown formats keep climbing through October.'],
+    ['Seasonal — horror gaming','Backrooms / terrifying-mod content (CaseOh) strengthens into Halloween; caseoh-format is #1 in Gaming trending as of Sep 19.']
+  ];
+  document.getElementById('cal').innerHTML = cal.map(c=>'<li><b>'+c[0]+'</b> — '+c[1]+'</li>').join('');
+
+  document.getElementById('foot').innerHTML =
+    (D.disclaimer||'')+'<br>Built by shorts_tracker.py in this repo · momentum = f(views/day, like-rate, recency, cadence), 0–100 · '
+    +'“14-day projection” = median views/day × 14 (linear, ignores decay).';
+
+  function fmt(n){ if(n==null)return '-'; if(n>=1e6)return (n/1e6).toFixed(2)+'M'; if(n>=1e3)return Math.round(n/1e3)+'K'; return String(Math.round(n)); }
+  function esc(s){return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
+})();
+</script>
+</body>
+</html>

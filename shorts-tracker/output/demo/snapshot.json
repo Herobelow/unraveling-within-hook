@@ -1,0 +1,305 @@
+{
+  "generated_at": "2026-09-21T21:43:24.575358+00:00",
+  "timezone": "Africa/Nairobi",
+  "method": "RSS + ReturnYouTubeDislike (no API key)",
+  "disclaimer": "Momentum scores and 14-day projections are heuristic linear extrapolations of observed views/day — not guarantees.",
+  "channels": [
+    {
+      "name": "NovaPlays",
+      "handle": "@novaplays",
+      "label": "FPS highlights",
+      "channel_id": "DEMO",
+      "shorts": [
+        {
+          "id": "demo4Nov",
+          "title": "NovaPlays short #5",
+          "published": "2026-09-21T04:18:48.961300+00:00",
+          "views": 122002,
+          "likes": 5611,
+          "age_days": 0.73,
+          "views_per_day": 168183,
+          "like_rate": 0.04599,
+          "score": 90.4,
+          "url": "https://www.youtube.com/shorts/demo4Nov"
+        },
+        {
+          "id": "demo3Nov",
+          "title": "NovaPlays short #4",
+          "published": "2026-09-21T02:45:49.876121+00:00",
+          "views": 128774,
+          "likes": 5178,
+          "age_days": 0.79,
+          "views_per_day": 163008,
+          "like_rate": 0.04021,
+          "score": 87.4,
+          "url": "https://www.youtube.com/shorts/demo3Nov"
+        },
+        {
+          "id": "demo1Nov",
+          "title": "NovaPlays short #2",
+          "published": "2026-09-17T06:51:13.501392+00:00",
+          "views": 6117463,
+          "likes": 287936,
+          "age_days": 4.62,
+          "views_per_day": 1324249,
+          "like_rate": 0.04707,
+          "score": 95.5,
+          "url": "https://www.youtube.com/shorts/demo1Nov"
+        },
+        {
+          "id": "demo5Nov",
+          "title": "NovaPlays short #6",
+          "published": "2026-09-10T21:58:02.285660+00:00",
+          "views": 6469534,
+          "likes": 281881,
+          "age_days": 10.99,
+          "views_per_day": 588683,
+          "like_rate": 0.04357,
+          "score": 87.3,
+          "url": "https://www.youtube.com/shorts/demo5Nov"
+        },
+        {
+          "id": "demo0Nov",
+          "title": "NovaPlays short #1",
+          "published": "2026-09-09T01:04:04.362700+00:00",
+          "views": 3753220,
+          "likes": 116354,
+          "age_days": 12.86,
+          "views_per_day": 291837,
+          "like_rate": 0.031,
+          "score": 77.0,
+          "url": "https://www.youtube.com/shorts/demo0Nov"
+        },
+        {
+          "id": "demo2Nov",
+          "title": "NovaPlays short #3",
+          "published": "2026-09-04T00:57:35.145294+00:00",
+          "views": 7117311,
+          "likes": 262464,
+          "age_days": 17.87,
+          "views_per_day": 398391,
+          "like_rate": 0.03688,
+          "score": 77.9,
+          "url": "https://www.youtube.com/shorts/demo2Nov"
+        }
+      ],
+      "metrics": {
+        "momentum": 87.7,
+        "status": "SURGING",
+        "shorts_per_week": 1.8,
+        "median_views_per_day": 398391,
+        "projection_14d_per_short": 5577474,
+        "best_short": {
+          "id": "demo2Nov",
+          "title": "NovaPlays short #3",
+          "published": "2026-09-04T00:57:35.145294+00:00",
+          "views": 7117311,
+          "likes": 262464,
+          "age_days": 17.87,
+          "views_per_day": 398391,
+          "like_rate": 0.03688,
+          "score": 77.9,
+          "url": "https://www.youtube.com/shorts/demo2Nov"
+        }
+      }
+    },
+    {
+      "name": "PixelPanda",
+      "handle": "@pixelpanda",
+      "label": "Minecraft builds",
+      "channel_id": "DEMO",
+      "shorts": [
+        {
+          "id": "demo3Pix",
+          "title": "PixelPanda short #4",
+          "published": "2026-09-19T18:57:49.935181+00:00",
+          "views": 916914,
+          "likes": 40480,
+          "age_days": 2.11,
+          "views_per_day": 433532,
+          "like_rate": 0.04415,
+          "score": 92.3,
+          "url": "https://www.youtube.com/shorts/demo3Pix"
+        },
+        {
+          "id": "demo1Pix",
+          "title": "PixelPanda short #2",
+          "published": "2026-09-07T21:10:03.549564+00:00",
+          "views": 3180159,
+          "likes": 83381,
+          "age_days": 14.02,
+          "views_per_day": 226779,
+          "like_rate": 0.02622,
+          "score": 72.9,
+          "url": "https://www.youtube.com/shorts/demo1Pix"
+        },
+        {
+          "id": "demo4Pix",
+          "title": "PixelPanda short #5",
+          "published": "2026-09-05T17:22:34.095702+00:00",
+          "views": 6476123,
+          "likes": 268429,
+          "age_days": 16.18,
+          "views_per_day": 400227,
+          "like_rate": 0.04145,
+          "score": 81.3,
+          "url": "https://www.youtube.com/shorts/demo4Pix"
+        },
+        {
+          "id": "demo0Pix",
+          "title": "PixelPanda short #1",
+          "published": "2026-09-05T16:16:55.704510+00:00",
+          "views": 1199414,
+          "likes": 62648,
+          "age_days": 16.23,
+          "views_per_day": 73916,
+          "like_rate": 0.05223,
+          "score": 78.8,
+          "url": "https://www.youtube.com/shorts/demo0Pix"
+        },
+        {
+          "id": "demo2Pix",
+          "title": "PixelPanda short #3",
+          "published": "2026-09-02T18:03:21.028472+00:00",
+          "views": 4284255,
+          "likes": 101578,
+          "age_days": 19.15,
+          "views_per_day": 223688,
+          "like_rate": 0.02371,
+          "score": 68.1,
+          "url": "https://www.youtube.com/shorts/demo2Pix"
+        },
+        {
+          "id": "demo5Pix",
+          "title": "PixelPanda short #6",
+          "published": "2026-09-02T10:29:55.975603+00:00",
+          "views": 4647621,
+          "likes": 195579,
+          "age_days": 19.47,
+          "views_per_day": 238735,
+          "like_rate": 0.04208,
+          "score": 77.4,
+          "url": "https://www.youtube.com/shorts/demo5Pix"
+        }
+      ],
+      "metrics": {
+        "momentum": 81.7,
+        "status": "SURGING",
+        "shorts_per_week": 3.2,
+        "median_views_per_day": 238735,
+        "projection_14d_per_short": 3342290,
+        "best_short": {
+          "id": "demo4Pix",
+          "title": "PixelPanda short #5",
+          "published": "2026-09-05T17:22:34.095702+00:00",
+          "views": 6476123,
+          "likes": 268429,
+          "age_days": 16.18,
+          "views_per_day": 400227,
+          "like_rate": 0.04145,
+          "score": 81.3,
+          "url": "https://www.youtube.com/shorts/demo4Pix"
+        }
+      }
+    },
+    {
+      "name": "TurboTuk",
+      "handle": "@turbotuk",
+      "label": "mobile racing (EAT)",
+      "channel_id": "DEMO",
+      "shorts": [
+        {
+          "id": "demo5Tur",
+          "title": "TurboTuk short #6",
+          "published": "2026-09-17T13:21:56.707677+00:00",
+          "views": 193741,
+          "likes": 11133,
+          "age_days": 4.35,
+          "views_per_day": 44556,
+          "like_rate": 0.05746,
+          "score": 84.7,
+          "url": "https://www.youtube.com/shorts/demo5Tur"
+        },
+        {
+          "id": "demo2Tur",
+          "title": "TurboTuk short #3",
+          "published": "2026-09-17T04:37:34.437235+00:00",
+          "views": 203960,
+          "likes": 4730,
+          "age_days": 4.71,
+          "views_per_day": 43282,
+          "like_rate": 0.02319,
+          "score": 71.0,
+          "url": "https://www.youtube.com/shorts/demo2Tur"
+        },
+        {
+          "id": "demo3Tur",
+          "title": "TurboTuk short #4",
+          "published": "2026-09-17T02:18:04.550242+00:00",
+          "views": 118056,
+          "likes": 3673,
+          "age_days": 4.81,
+          "views_per_day": 24548,
+          "like_rate": 0.03111,
+          "score": 72.6,
+          "url": "https://www.youtube.com/shorts/demo3Tur"
+        },
+        {
+          "id": "demo1Tur",
+          "title": "TurboTuk short #2",
+          "published": "2026-09-10T06:33:56.713424+00:00",
+          "views": 1081533,
+          "likes": 23613,
+          "age_days": 11.63,
+          "views_per_day": 92983,
+          "like_rate": 0.02183,
+          "score": 68.7,
+          "url": "https://www.youtube.com/shorts/demo1Tur"
+        },
+        {
+          "id": "demo4Tur",
+          "title": "TurboTuk short #5",
+          "published": "2026-09-09T02:50:46.482866+00:00",
+          "views": 715090,
+          "likes": 24890,
+          "age_days": 12.79,
+          "views_per_day": 55925,
+          "like_rate": 0.03481,
+          "score": 72.4,
+          "url": "https://www.youtube.com/shorts/demo4Tur"
+        },
+        {
+          "id": "demo0Tur",
+          "title": "TurboTuk short #1",
+          "published": "2026-09-05T06:47:25.428127+00:00",
+          "views": 1416180,
+          "likes": 77136,
+          "age_days": 16.62,
+          "views_per_day": 85198,
+          "like_rate": 0.05447,
+          "score": 79.1,
+          "url": "https://www.youtube.com/shorts/demo0Tur"
+        }
+      ],
+      "metrics": {
+        "momentum": 80.8,
+        "status": "SURGING",
+        "shorts_per_week": 6.1,
+        "median_views_per_day": 55925,
+        "projection_14d_per_short": 782950,
+        "best_short": {
+          "id": "demo0Tur",
+          "title": "TurboTuk short #1",
+          "published": "2026-09-05T06:47:25.428127+00:00",
+          "views": 1416180,
+          "likes": 77136,
+          "age_days": 16.62,
+          "views_per_day": 85198,
+          "like_rate": 0.05447,
+          "score": 79.1,
+          "url": "https://www.youtube.com/shorts/demo0Tur"
+        }
+      }
+    }
+  ]
+}

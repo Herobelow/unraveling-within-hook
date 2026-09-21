@@ -1,0 +1,72 @@
+{
+  "_comment": "Hand-collected snapshot, 2026-09-21 ~21:30 EAT. Views/likes via watch pages + ReturnYouTubeDislike API; publish dates via channel Shorts RSS (UUSH playlists). Jynxzi/Dream views are the rounded counts shown on their channel shelves (likes unavailable).",
+  "snapshot_at": "2026-09-21T18:30:00+00:00",
+  "channels": [
+    {
+      "name": "IShowSpeed",
+      "handle": "ishowspeed",
+      "channel_id": "UCWsDFcIhY2DBi3GB5uykGXA",
+      "label": "variety / challenge shorts",
+      "shorts": [
+        { "id": "dm-ISSgW_-k", "title": "ROCK PAPER SCISSORS KFC CHALLENGE!!", "published": "2026-09-11T11:00:01+00:00", "views": 8120979, "likes": 302365 },
+        { "id": "3Y93InnRp8U", "title": "Eat The Hot Wing, Win $$$$", "published": "2026-09-13T18:13:46+00:00", "views": 1720528, "likes": 73418 },
+        { "id": "0J6NW3kgdd0", "title": "APPLE SENT ME THE NEW IPHONE 18", "published": "2026-09-19T22:20:29+00:00", "views": 4155768, "likes": 235121 }
+      ]
+    },
+    {
+      "name": "KreekCraft",
+      "handle": "KreekCraft",
+      "channel_id": "UCxsk7hqE_CwZWGEJEkGanbA",
+      "label": "Roblox news & reactions",
+      "shorts": [
+        { "id": "E1WrTaRYBus", "title": "ROBLOX BANS GOT WORSE 💀", "published": "2026-09-18T22:50:34+00:00", "views": 426992, "likes": 9980 },
+        { "id": "2n1rIXEeybM", "title": "kids can't play roblox anymore 😭", "published": "2026-09-20T20:30:23+00:00", "views": 1097490, "likes": 26200 },
+        { "id": "H_7xo6l9elw", "title": "roblox is fixing faces 🙏😭", "published": "2026-09-21T20:07:00+00:00", "views": 25931, "likes": 1716 }
+      ]
+    },
+    {
+      "name": "CaseOh",
+      "handle": "CaseOh_",
+      "channel_id": "UC63anZxfVGHUEmfBAf5w7pw",
+      "label": "horror mods / funny moments",
+      "shorts": [
+        { "id": "Cb11JWFrKrw", "title": "CaseOh Falls Into The Backrooms In Minecraft!", "published": "2026-09-19T01:00:22+00:00", "views": 112893, "likes": 7377 },
+        { "id": "8Pw1097TABI", "title": "CaseOh Is Almost PUSHED To His Death!", "published": "2026-09-20T01:00:14+00:00", "views": 81071, "likes": 6487 },
+        { "id": "I04w2SQxZ_Y", "title": "CaseOh Gets PRESSED By Minecraft Villagers!", "published": "2026-09-21T01:00:25+00:00", "views": 65631, "likes": 5149 }
+      ]
+    },
+    {
+      "name": "SypherPK",
+      "handle": "SypherPK",
+      "channel_id": "UC_q5WZtFp36adwqhKpZzxwQ",
+      "label": "Fortnite",
+      "shorts": [
+        { "id": "vuYiS-kEirE", "title": "Fortnite added THIS for Ali-A!", "published": "2026-09-17T22:00:40+00:00", "views": 899966, "likes": 16776 },
+        { "id": "5-FBl3NV4Aw", "title": "It's finally here!", "published": "2026-09-18T22:00:29+00:00", "views": 39059, "likes": 1124 },
+        { "id": "x5InlP4XxYg", "title": "Who's Your Most Famous Contact?", "published": "2026-09-21T17:00:27+00:00", "views": 37033, "likes": 2668 }
+      ]
+    },
+    {
+      "name": "Jynxzi",
+      "handle": "Jynxzi",
+      "channel_id": "UCjiXtODGCCulmhwypZAWSag",
+      "label": "Rainbow Six Siege",
+      "shorts": [
+        { "id": "ld5Tv61_BEo", "title": "Bro did not say flash warning😭", "published": "2026-08-16T16:50:30+00:00", "views": 1700000, "likes": null },
+        { "id": "O_DHiF0Me3w", "title": "Jynxzi Reacts to Kali Rework 😭", "published": "2026-08-16T22:15:12+00:00", "views": 824000, "likes": null },
+        { "id": "8PfLce78M4o", "title": "Jynxzi has mic drift 😭", "published": "2026-09-02T15:48:12+00:00", "views": 419000, "likes": null }
+      ]
+    },
+    {
+      "name": "Dream",
+      "handle": "Dream",
+      "channel_id": "UCTkXRDQl0luXxVQrRQvWS6w",
+      "label": "Minecraft evergreen shorts",
+      "shorts": [
+        { "id": "PgGj6WKcf5w", "title": "What Armor Is The Best?", "published": "2026-04-17T21:19:51+00:00", "views": 8000000, "likes": null },
+        { "id": "t3Urp8qh3QM", "title": "Traffic Jams Explained In Minecraft", "published": "2026-05-03T10:47:29+00:00", "views": 3300000, "likes": null },
+        { "id": "G9I2qfuXIIg", "title": "Peaceful Mode...", "published": "2026-05-11T13:04:05+00:00", "views": 2700000, "likes": null }
+      ]
+    }
+  ]
+}

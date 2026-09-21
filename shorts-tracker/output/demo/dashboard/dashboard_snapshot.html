@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gaming Shorts Tracker — momentum & 2-week outlook</title>
+<style>
+  :root{--bg:#0d1117;--card:#161b22;--edge:#30363d;--txt:#e6edf3;--dim:#8b949e;
+        --hot:#f85149;--surge:#3fb950;--warm:#d29922;--cool:#58a6ff;--accent:#bc8cff}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;padding:28px 18px 60px}
+  .wrap{max-width:1080px;margin:0 auto}
+  h1{font-size:26px;letter-spacing:-.5px} h1 span{color:var(--accent)}
+  .sub{color:var(--dim);margin:6px 0 22px;font-size:14px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px}
+  .card{background:var(--card);border:1px solid var(--edge);border-radius:12px;padding:16px 18px}
+  .card h2{font-size:17px;display:flex;align-items:center;justify-content:space-between;gap:8px}
+  .pill{font-size:11px;font-weight:700;letter-spacing:.6px;padding:3px 9px;border-radius:999px;white-space:nowrap}
+  .SURGING{background:#12351c;color:var(--surge)} .HOT{background:#3a2b0e;color:var(--warm)}
+  .STEADY{background:#12253a;color:var(--cool)} .COOLING{background:#331c1c;color:var(--hot)}
+  .label{color:var(--dim);font-size:12.5px;margin:2px 0 12px}
+  .kv{display:flex;justify-content:space-between;font-size:13.5px;padding:3px 0}
+  .kv b{font-variant-numeric:tabular-nums}
+  .bar{height:6px;border-radius:4px;background:#21262d;margin-top:10px;overflow:hidden}
+  .bar i{display:block;height:100%;border-radius:4px;background:linear-gradient(90deg,#bc8cff,#3fb950)}
+  table{width:100%;border-collapse:collapse;margin-top:10px;font-size:13.5px}
+  th{color:var(--dim);text-align:left;font-size:11.5px;letter-spacing:.8px;text-transform:uppercase;padding:8px 10px;border-bottom:1px solid var(--edge)}
+  td{padding:8px 10px;border-bottom:1px solid #21262d;font-variant-numeric:tabular-nums}
+  tr:hover td{background:#1c2129}
+  td a{color:var(--txt);text-decoration:none} td a:hover{color:var(--accent)}
+  .score{font-weight:700;color:var(--accent)}
+  section{margin-top:34px} section h2{font-size:20px;margin-bottom:12px}
+  .foot{color:var(--dim);font-size:12.5px;margin-top:30px;line-height:1.7}
+  .calendar li{margin:7px 0 7px 18px} .calendar b{color:var(--accent)}
+  @media(max-width:640px){td,th{padding:6px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>🎮 Gaming Shorts <span>momentum tracker</span></h1>
+  <div class="sub" id="meta">loading…</div>
+
+  <section style="margin-top:0">
+    <h2>Channel momentum</h2>
+    <div class="grid" id="cards"></div>
+  </section>
+
+  <section>
+    <h2>Top shorts right now (by momentum score)</h2>
+    <div class="card" style="overflow-x:auto">
+      <table>
+        <thead><tr><th>Score</th><th>Short</th><th>Channel</th><th>Views</th><th>Views/day</th><th>Age</th></tr></thead>
+        <tbody id="lb"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>Why these may keep climbing — next 14 days</h2>
+    <div class="card"><ul class="calendar" id="cal"></ul></div>
+  </section>
+
+  <p class="foot" id="foot"></p>
+</div>
+
+<script>window.SHORTS_DATA = {"generated_at": "2026-09-21T21:43:24.575358+00:00", "timezone": "Africa/Nairobi", "method": "RSS + ReturnYouTubeDislike (no API key)", "disclaimer": "Momentum scores and 14-day projections are heuristic linear extrapolations of observed views/day — not guarantees.", "channels": [{"name": "NovaPlays", "handle": "@novaplays", "label": "FPS highlights", "channel_id": "DEMO", "shorts": [{"id": "demo4Nov", "title": "NovaPlays short #5", "published": "2026-09-21T04:18:48.961300+00:00", "views": 122002, "likes": 5611, "age_days": 0.73, "views_per_day": 168183, "like_rate": 0.04599, "score": 90.4, "url": "https://www.youtube.com/shorts/demo4Nov"}, {"id": "demo3Nov", "title": "NovaPlays short #4", "published": "2026-09-21T02:45:49.876121+00:00", "views": 128774, "likes": 5178, "age_days": 0.79, "views_per_day": 163008, "like_rate": 0.04021, "score": 87.4, "url": "https://www.youtube.com/shorts/demo3Nov"}, {"id": "demo1Nov", "title": "NovaPlays short #2", "published": "2026-09-17T06:51:13.501392+00:00", "views": 6117463, "likes": 287936, "age_days": 4.62, "views_per_day": 1324249, "like_rate": 0.04707, "score": 95.5, "url": "https://www.youtube.com/shorts/demo1Nov"}, {"id": "demo5Nov", "title": "NovaPlays short #6", "published": "2026-09-10T21:58:02.285660+00:00", "views": 6469534, "likes": 281881, "age_days": 10.99, "views_per_day": 588683, "like_rate": 0.04357, "score": 87.3, "url": "https://www.youtube.com/shorts/demo5Nov"}, {"id": "demo0Nov", "title": "NovaPlays short #1", "published": "2026-09-09T01:04:04.362700+00:00", "views": 3753220, "likes": 116354, "age_days": 12.86, "views_per_day": 291837, "like_rate": 0.031, "score": 77.0, "url": "https://www.youtube.com/shorts/demo0Nov"}, {"id": "demo2Nov", "title": "NovaPlays short #3", "published": "2026-09-04T00:57:35.145294+00:00", "views": 7117311, "likes": 262464, "age_days": 17.87, "views_per_day": 398391, "like_rate": 0.03688, "score": 77.9, "url": "https://www.youtube.com/shorts/demo2Nov"}], "metrics": {"momentum": 87.7, "status": "SURGING", "shorts_per_week": 1.8, "median_views_per_day": 398391, "projection_14d_per_short": 5577474, "best_short": {"id": "demo2Nov", "title": "NovaPlays short #3", "published": "2026-09-04T00:57:35.145294+00:00", "views": 7117311, "likes": 262464, "age_days": 17.87, "views_per_day": 398391, "like_rate": 0.03688, "score": 77.9, "url": "https://www.youtube.com/shorts/demo2Nov"}}}, {"name": "PixelPanda", "handle": "@pixelpanda", "label": "Minecraft builds", "channel_id": "DEMO", "shorts": [{"id": "demo3Pix", "title": "PixelPanda short #4", "published": "2026-09-19T18:57:49.935181+00:00", "views": 916914, "likes": 40480, "age_days": 2.11, "views_per_day": 433532, "like_rate": 0.04415, "score": 92.3, "url": "https://www.youtube.com/shorts/demo3Pix"}, {"id": "demo1Pix", "title": "PixelPanda short #2", "published": "2026-09-07T21:10:03.549564+00:00", "views": 3180159, "likes": 83381, "age_days": 14.02, "views_per_day": 226779, "like_rate": 0.02622, "score": 72.9, "url": "https://www.youtube.com/shorts/demo1Pix"}, {"id": "demo4Pix", "title": "PixelPanda short #5", "published": "2026-09-05T17:22:34.095702+00:00", "views": 6476123, "likes": 268429, "age_days": 16.18, "views_per_day": 400227, "like_rate": 0.04145, "score": 81.3, "url": "https://www.youtube.com/shorts/demo4Pix"}, {"id": "demo0Pix", "title": "PixelPanda short #1", "published": "2026-09-05T16:16:55.704510+00:00", "views": 1199414, "likes": 62648, "age_days": 16.23, "views_per_day": 73916, "like_rate": 0.05223, "score": 78.8, "url": "https://www.youtube.com/shorts/demo0Pix"}, {"id": "demo2Pix", "title": "PixelPanda short #3", "published": "2026-09-02T18:03:21.028472+00:00", "views": 4284255, "likes": 101578, "age_days": 19.15, "views_per_day": 223688, "like_rate": 0.02371, "score": 68.1, "url": "https://www.youtube.com/shorts/demo2Pix"}, {"id": "demo5Pix", "title": "PixelPanda short #6", "published": "2026-09-02T10:29:55.975603+00:00", "views": 4647621, "likes": 195579, "age_days": 19.47, "views_per_day": 238735, "like_rate": 0.04208, "score": 77.4, "url": "https://www.youtube.com/shorts/demo5Pix"}], "metrics": {"momentum": 81.7, "status": "SURGING", "shorts_per_week": 3.2, "median_views_per_day": 238735, "projection_14d_per_short": 3342290, "best_short": {"id": "demo4Pix", "title": "PixelPanda short #5", "published": "2026-09-05T17:22:34.095702+00:00", "views": 6476123, "likes": 268429, "age_days": 16.18, "views_per_day": 400227, "like_rate": 0.04145, "score": 81.3, "url": "https://www.youtube.com/shorts/demo4Pix"}}}, {"name": "TurboTuk", "handle": "@turbotuk", "label": "mobile racing (EAT)", "channel_id": "DEMO", "shorts": [{"id": "demo5Tur", "title": "TurboTuk short #6", "published": "2026-09-17T13:21:56.707677+00:00", "views": 193741, "likes": 11133, "age_days": 4.35, "views_per_day": 44556, "like_rate": 0.05746, "score": 84.7, "url": "https://www.youtube.com/shorts/demo5Tur"}, {"id": "demo2Tur", "title": "TurboTuk short #3", "published": "2026-09-17T04:37:34.437235+00:00", "views": 203960, "likes": 4730, "age_days": 4.71, "views_per_day": 43282, "like_rate": 0.02319, "score": 71.0, "url": "https://www.youtube.com/shorts/demo2Tur"}, {"id": "demo3Tur", "title": "TurboTuk short #4", "published": "2026-09-17T02:18:04.550242+00:00", "views": 118056, "likes": 3673, "age_days": 4.81, "views_per_day": 24548, "like_rate": 0.03111, "score": 72.6, "url": "https://www.youtube.com/shorts/demo3Tur"}, {"id": "demo1Tur", "title": "TurboTuk short #2", "published": "2026-09-10T06:33:56.713424+00:00", "views": 1081533, "likes": 23613, "age_days": 11.63, "views_per_day": 92983, "like_rate": 0.02183, "score": 68.7, "url": "https://www.youtube.com/shorts/demo1Tur"}, {"id": "demo4Tur", "title": "TurboTuk short #5", "published": "2026-09-09T02:50:46.482866+00:00", "views": 715090, "likes": 24890, "age_days": 12.79, "views_per_day": 55925, "like_rate": 0.03481, "score": 72.4, "url": "https://www.youtube.com/shorts/demo4Tur"}, {"id": "demo0Tur", "title": "TurboTuk short #1", "published": "2026-09-05T06:47:25.428127+00:00", "views": 1416180, "likes": 77136, "age_days": 16.62, "views_per_day": 85198, "like_rate": 0.05447, "score": 79.1, "url": "https://www.youtube.com/shorts/demo0Tur"}], "metrics": {"momentum": 80.8, "status": "SURGING", "shorts_per_week": 6.1, "median_views_per_day": 55925, "projection_14d_per_short": 782950, "best_short": {"id": "demo0Tur", "title": "TurboTuk short #1", "published": "2026-09-05T06:47:25.428127+00:00", "views": 1416180, "likes": 77136, "age_days": 16.62, "views_per_day": 85198, "like_rate": 0.05447, "score": 79.1, "url": "https://www.youtube.com/shorts/demo0Tur"}}}], "leaderboard": [{"channel": "NovaPlays", "id": "demo1Nov", "title": "NovaPlays short #2", "views": 6117463, "views_per_day": 1324249, "score": 95.5, "age_days": 4.62, "url": "https://www.youtube.com/shorts/demo1Nov"}, {"channel": "PixelPanda", "id": "demo3Pix", "title": "PixelPanda short #4", "views": 916914, "views_per_day": 433532, "score": 92.3, "age_days": 2.11, "url": "https://www.youtube.com/shorts/demo3Pix"}, {"channel": "NovaPlays", "id": "demo4Nov", "title": "NovaPlays short #5", "views": 122002, "views_per_day": 168183, "score": 90.4, "age_days": 0.73, "url": "https://www.youtube.com/shorts/demo4Nov"}, {"channel": "NovaPlays", "id": "demo3Nov", "title": "NovaPlays short #4", "views": 128774, "views_per_day": 163008, "score": 87.4, "age_days": 0.79, "url": "https://www.youtube.com/shorts/demo3Nov"}, {"channel": "NovaPlays", "id": "demo5Nov", "title": "NovaPlays short #6", "views": 6469534, "views_per_day": 588683, "score": 87.3, "age_days": 10.99, "url": "https://www.youtube.com/shorts/demo5Nov"}, {"channel": "TurboTuk", "id": "demo5Tur", "title": "TurboTuk short #6", "views": 193741, "views_per_day": 44556, "score": 84.7, "age_days": 4.35, "url": "https://www.youtube.com/shorts/demo5Tur"}, {"channel": "PixelPanda", "id": "demo4Pix", "title": "PixelPanda short #5", "views": 6476123, "views_per_day": 400227, "score": 81.3, "age_days": 16.18, "url": "https://www.youtube.com/shorts/demo4Pix"}, {"channel": "TurboTuk", "id": "demo0Tur", "title": "TurboTuk short #1", "views": 1416180, "views_per_day": 85198, "score": 79.1, "age_days": 16.62, "url": "https://www.youtube.com/shorts/demo0Tur"}, {"channel": "PixelPanda", "id": "demo0Pix", "title": "PixelPanda short #1", "views": 1199414, "views_per_day": 73916, "score": 78.8, "age_days": 16.23, "url": "https://www.youtube.com/shorts/demo0Pix"}, {"channel": "NovaPlays", "id": "demo2Nov", "title": "NovaPlays short #3", "views": 7117311, "views_per_day": 398391, "score": 77.9, "age_days": 17.87, "url": "https://www.youtube.com/shorts/demo2Nov"}]};</script>
+<script>
+(function(){
+  const D = window.SHORTS_DATA;
+  if(!D){document.getElementById('meta').textContent='No data.js found — run shorts_tracker.py first.';return;}
+  document.getElementById('meta').textContent =
+    'Snapshot ' + (D.generated_at||'').slice(0,16).replace('T',' ') + ' (' + (D.timezone||'UTC') + ') · '
+    + D.channels.length + ' channels · no-API-key data (Shorts RSS + public stats)';
+
+  const rank = [...D.channels].sort((a,b)=>b.metrics.momentum-a.metrics.momentum);
+  document.getElementById('cards').innerHTML = rank.map(c=>{
+    const m=c.metrics;
+    return '<div class="card"><h2>'+c.name+' <span class="pill '+m.status.split(' ')[0]+'">'+m.status+'</span></h2>'
+      +'<div class="label">'+(c.label||'')+'</div>'
+      +'<div class="kv"><span>Momentum score</span><b>'+m.momentum+'/100</b></div>'
+      +'<div class="kv"><span>Median views/day</span><b>'+fmt(m.median_views_per_day)+'</b></div>'
+      +'<div class="kv"><span>Naive 14-day projection / short</span><b>'+fmt(m.projection_14d_per_short)+' views</b></div>'
+      +'<div class="kv"><span>Cadence</span><b>'+m.shorts_per_week+' shorts/wk</b></div>'
+      +'<div class="kv"><span>Best recent short</span><b style="max-width:55%;text-align:right;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'+esc((m.best_short||{}).title||'-')+'</b></div>'
+      +'<div class="bar"><i style="width:'+Math.min(100,m.momentum)+'%"></i></div></div>';
+  }).join('');
+
+  const lb=(D.leaderboard||[]);
+  document.getElementById('lb').innerHTML = lb.map(s=>
+    '<tr><td class="score">'+s.score+'</td>'
+    +'<td><a href="'+s.url+'" target="_blank" rel="noopener">'+esc(s.title)+'</a></td>'
+    +'<td>'+esc(s.channel)+'</td><td>'+fmt(s.views)+'</td><td>'+fmt(s.views_per_day)+'</td><td>'+s.age_days+'d</td></tr>'
+  ).join('') || '<tr><td colspan="6">no data</td></tr>';
+
+  const cal=[
+    ['Sep 26 — Minecraft Live 2026','New update + Dungeons 2 news: Minecraft short-form (mods, builds, myths) gets a fresh topic wave within days.'],
+    ['Oct 1 — Fortnite v42.30 (Fortnitemares 2026)','Halloween event launch: skins, map changes, quests → spike in Fortnite shorts (see SypherPK format).'],
+    ['Early Oct — Brawl Stars: new brawler Vince + Brawl-O-Ween season','Monthly brawler drop + Halloween season; mobile-gaming shorts perform strongly in Africa/KE.'],
+    ['Ongoing — Roblox news cycle','EU kids-ban debate, ads in app, guests return, classic theme: reaction/news shorts are printing views (KreekCraft model).'],
+    ['Ramping — GTA 6 (Nov 19 launch)','"Can I play GTA 6 on my ___" meme + countdown/breakdown formats keep climbing through October.'],
+    ['Seasonal — horror gaming','Backrooms / terrifying-mod content (CaseOh) strengthens into Halloween; caseoh-format is #1 in Gaming trending as of Sep 19.']
+  ];
+  document.getElementById('cal').innerHTML = cal.map(c=>'<li><b>'+c[0]+'</b> — '+c[1]+'</li>').join('');
+
+  document.getElementById('foot').innerHTML =
+    (D.disclaimer||'')+'<br>Built by shorts_tracker.py in this repo · momentum = f(views/day, like-rate, recency, cadence), 0–100 · '
+    +'“14-day projection” = median views/day × 14 (linear, ignores decay).';
+
+  function fmt(n){ if(n==null)return '-'; if(n>=1e6)return (n/1e6).toFixed(2)+'M'; if(n>=1e3)return Math.round(n/1e3)+'K'; return String(Math.round(n)); }
+  function esc(s){return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
+})();
+</script>
+</body>
+</html>

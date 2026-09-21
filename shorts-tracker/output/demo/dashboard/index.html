@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gaming Shorts Tracker — momentum & 2-week outlook</title>
+<style>
+  :root{--bg:#0d1117;--card:#161b22;--edge:#30363d;--txt:#e6edf3;--dim:#8b949e;
+        --hot:#f85149;--surge:#3fb950;--warm:#d29922;--cool:#58a6ff;--accent:#bc8cff}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;padding:28px 18px 60px}
+  .wrap{max-width:1080px;margin:0 auto}
+  h1{font-size:26px;letter-spacing:-.5px} h1 span{color:var(--accent)}
+  .sub{color:var(--dim);margin:6px 0 22px;font-size:14px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px}
+  .card{background:var(--card);border:1px solid var(--edge);border-radius:12px;padding:16px 18px}
+  .card h2{font-size:17px;display:flex;align-items:center;justify-content:space-between;gap:8px}
+  .pill{font-size:11px;font-weight:700;letter-spacing:.6px;padding:3px 9px;border-radius:999px;white-space:nowrap}
+  .SURGING{background:#12351c;color:var(--surge)} .HOT{background:#3a2b0e;color:var(--warm)}
+  .STEADY{background:#12253a;color:var(--cool)} .COOLING{background:#331c1c;color:var(--hot)}
+  .label{color:var(--dim);font-size:12.5px;margin:2px 0 12px}
+  .kv{display:flex;justify-content:space-between;font-size:13.5px;padding:3px 0}
+  .kv b{font-variant-numeric:tabular-nums}
+  .bar{height:6px;border-radius:4px;background:#21262d;margin-top:10px;overflow:hidden}
+  .bar i{display:block;height:100%;border-radius:4px;background:linear-gradient(90deg,#bc8cff,#3fb950)}
+  table{width:100%;border-collapse:collapse;margin-top:10px;font-size:13.5px}
+  th{color:var(--dim);text-align:left;font-size:11.5px;letter-spacing:.8px;text-transform:uppercase;padding:8px 10px;border-bottom:1px solid var(--edge)}
+  td{padding:8px 10px;border-bottom:1px solid #21262d;font-variant-numeric:tabular-nums}
+  tr:hover td{background:#1c2129}
+  td a{color:var(--txt);text-decoration:none} td a:hover{color:var(--accent)}
+  .score{font-weight:700;color:var(--accent)}
+  section{margin-top:34px} section h2{font-size:20px;margin-bottom:12px}
+  .foot{color:var(--dim);font-size:12.5px;margin-top:30px;line-height:1.7}
+  .calendar li{margin:7px 0 7px 18px} .calendar b{color:var(--accent)}
+  @media(max-width:640px){td,th{padding:6px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>🎮 Gaming Shorts <span>momentum tracker</span></h1>
+  <div class="sub" id="meta">loading…</div>
+
+  <section style="margin-top:0">
+    <h2>Channel momentum</h2>
+    <div class="grid" id="cards"></div>
+  </section>
+
+  <section>
+    <h2>Top shorts right now (by momentum score)</h2>
+    <div class="card" style="overflow-x:auto">
+      <table>
+        <thead><tr><th>Score</th><th>Short</th><th>Channel</th><th>Views</th><th>Views/day</th><th>Age</th></tr></thead>
+        <tbody id="lb"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>Why these may keep climbing — next 14 days</h2>
+    <div class="card"><ul class="calendar" id="cal"></ul></div>
+  </section>
+
+  <p class="foot" id="foot"></p>
+</div>
+
+<script src="data.js"></script>
+<script>
+(function(){
+  const D = window.SHORTS_DATA;
+  if(!D){document.getElementById('meta').textContent='No data.js found — run shorts_tracker.py first.';return;}
+  document.getElementById('meta').textContent =
+    'Snapshot ' + (D.generated_at||'').slice(0,16).replace('T',' ') + ' (' + (D.timezone||'UTC') + ') · '
+    + D.channels.length + ' channels · no-API-key data (Shorts RSS + public stats)';
+
+  const rank = [...D.channels].sort((a,b)=>b.metrics.momentum-a.metrics.momentum);
+  document.getElementById('cards').innerHTML = rank.map(c=>{
+    const m=c.metrics;
+    return '<div class="card"><h2>'+c.name+' <span class="pill '+m.status.split(' ')[0]+'">'+m.status+'</span></h2>'
+      +'<div class="label">'+(c.label||'')+'</div>'
+      +'<div class="kv"><span>Momentum score</span><b>'+m.momentum+'/100</b></div>'
+      +'<div class="kv"><span>Median views/day</span><b>'+fmt(m.median_views_per_day)+'</b></div>'
+      +'<div class="kv"><span>Naive 14-day projection / short</span><b>'+fmt(m.projection_14d_per_short)+' views</b></div>'
+      +'<div class="kv"><span>Cadence</span><b>'+m.shorts_per_week+' shorts/wk</b></div>'
+      +'<div class="kv"><span>Best recent short</span><b style="max-width:55%;text-align:right;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'+esc((m.best_short||{}).title||'-')+'</b></div>'
+      +'<div class="bar"><i style="width:'+Math.min(100,m.momentum)+'%"></i></div></div>';
+  }).join('');
+
+  const lb=(D.leaderboard||[]);
+  document.getElementById('lb').innerHTML = lb.map(s=>
+    '<tr><td class="score">'+s.score+'</td>'
+    +'<td><a href="'+s.url+'" target="_blank" rel="noopener">'+esc(s.title)+'</a></td>'
+    +'<td>'+esc(s.channel)+'</td><td>'+fmt(s.views)+'</td><td>'+fmt(s.views_per_day)+'</td><td>'+s.age_days+'d</td></tr>'
+  ).join('') || '<tr><td colspan="6">no data</td></tr>';
+
+  const cal=[
+    ['Sep 26 — Minecraft Live 2026','New update + Dungeons 2 news: Minecraft short-form (mods, builds, myths) gets a fresh topic wave within days.'],
+    ['Oct 1 — Fortnite v42.30 (Fortnitemares 2026)','Halloween event launch: skins, map changes, quests → spike in Fortnite shorts (see SypherPK format).'],
+    ['Early Oct — Brawl Stars: new brawler Vince + Brawl-O-Ween season','Monthly brawler drop + Halloween season; mobile-gaming shorts perform strongly in Africa/KE.'],
+    ['Ongoing — Roblox news cycle','EU kids-ban debate, ads in app, guests return, classic theme: reaction/news shorts are printing views (KreekCraft model).'],
+    ['Ramping — GTA 6 (Nov 19 launch)','"Can I play GTA 6 on my ___" meme + countdown/breakdown formats keep climbing through October.'],
+    ['Seasonal — horror gaming','Backrooms / terrifying-mod content (CaseOh) strengthens into Halloween; caseoh-format is #1 in Gaming trending as of Sep 19.']
+  ];
+  document.getElementById('cal').innerHTML = cal.map(c=>'<li><b>'+c[0]+'</b> — '+c[1]+'</li>').join('');
+
+  document.getElementById('foot').innerHTML =
+    (D.disclaimer||'')+'<br>Built by shorts_tracker.py in this repo · momentum = f(views/day, like-rate, recency, cadence), 0–100 · '
+    +'“14-day projection” = median views/day × 14 (linear, ignores decay).';
+
+  function fmt(n){ if(n==null)return '-'; if(n>=1e6)return (n/1e6).toFixed(2)+'M'; if(n>=1e3)return Math.round(n/1e3)+'K'; return String(Math.round(n)); }
+  function esc(s){return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
+})();
+</script>
+</body>
+</html>
