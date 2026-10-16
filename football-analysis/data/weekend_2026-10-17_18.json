@@ -1,0 +1,309 @@
+{
+  "as_of": "2026-10-16",
+  "scope": "Top-5 European leagues, weekend of 17-18 Oct 2026 (UTC), plus Opta-only Man City v Ipswich (Sat 17) and Coventry v Tottenham (Mon 19). Champions League matchday 3 (20-21 Oct) is covered in the news log only. Championship, League Two and African/Kenyan leagues are not covered.",
+  "sources": {
+    "matchsharp": {"name": "MatchSharp weekend predictions (market-implied, margin removed)", "url": "https://matchsharp.com/predictions/weekend"},
+    "opta": {"name": "Opta Analyst / Opta supercomputer, PL Matchday 7", "url": "https://theanalyst.com/articles/premier-league-match-predictions"},
+    "uefa_results": {"name": "UEFA: 2026/27 Champions League league phase fixtures and results", "url": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures-a/"},
+    "uefa_lineups": {"name": "UEFA: Champions League predicted line-ups, Matchday 2 team news", "url": "https://www.uefa.com/uefachampionsleague/news/02aa-21cf3c78cf12-1c26cfd9b696-1000--champions-league-predicted-line-ups-matchday-2-team-news-/"},
+    "anfield": {"name": "This Is Anfield: Iraola injury update", "url": "https://www.thisisanfield.com/2026/10/iraola-liverpool-injury-update-lask-isak-szoboszlai-gakpo/"},
+    "men_sesko": {"name": "Manchester Evening News via Stretty News / Yahoo: Sesko injury", "url": "https://sports.yahoo.com/articles/men-man-utd-now-not-145000792.html"},
+    "utd_injuries": {"name": "Yahoo Sports: Man Utd injury updates", "url": "https://sports.yahoo.com/articles/mainoo-e-ko-ligt-8-120228060.html"},
+    "false9": {"name": "The False9: Champions League MD3 preview (Arsenal injury news)", "url": "https://thefalse9.com/2026/10/champions-league-matchday-3-fixtures-kick-off-times.html"},
+    "newsy": {"name": "Newsy Today: Kone injury (low-credibility aggregator)", "url": "https://www.newsy-today.com/roma-midfielder-kone-injury-status-and-recovery-update/"},
+    "livescore_bl": {"name": "LiveScore: Bundesliga week 6 predictions", "url": "https://www.livescore.com/en/news/football/bundesliga/predictions/bundesliga-predictions-all-nine-week-six-games-oct-16th-to-18th-2026/"}
+  },
+  "matches": [
+    {
+      "id": "PL-EVE-CHE", "competition": "Premier League", "window": "Sat 17 Oct 11:30",
+      "home": "Everton", "away": "Chelsea",
+      "baseline": {"source": "matchsharp", "home": 0.31, "draw": 0.26, "away": 0.43},
+      "secondary": {"source": "opta", "home": 0.429, "away": 0.304},
+      "factors": []
+    },
+    {
+      "id": "PL-BRE-LIV", "competition": "Premier League", "window": "Sat 17 Oct 14:00",
+      "home": "Brentford", "away": "Liverpool",
+      "baseline": {"source": "matchsharp", "home": 0.40, "draw": 0.26, "away": 0.34},
+      "secondary": {"source": "opta", "home": 0.379, "away": 0.357},
+      "factors": [
+        {"team": "away", "label": "Liverpool played Champions League at LASK on Wed 14 Oct (won 6-3); about 3 days rest", "effect": -0.06, "confidence": 1.0, "source": "uefa_results"},
+        {"team": "away", "label": "Gakpo, Isak and Szoboszlai missed the 10 Oct home game v Man City; return status for this game not confirmed", "effect": -0.04, "confidence": 0.5, "source": "anfield"}
+      ]
+    },
+    {
+      "id": "PL-FUL-HUL", "competition": "Premier League", "window": "Sat 17 Oct 14:00",
+      "home": "Fulham", "away": "Hull City",
+      "baseline": {"source": "matchsharp", "home": 0.56, "draw": 0.24, "away": 0.20},
+      "secondary": {"source": "opta", "home": 0.454, "away": 0.277},
+      "factors": [
+        {"team": "home", "label": "Head coach Arbeloa under pressure after a difficult start; Fulham still without a league win (narrative, not a confirmed sacking threat)", "effect": -0.03, "confidence": 0.5, "source": "opta"}
+      ]
+    },
+    {
+      "id": "PL-NEW-AVL", "competition": "Premier League", "window": "Sat 17 Oct 16:30",
+      "home": "Newcastle United", "away": "Aston Villa",
+      "baseline": {"source": "matchsharp", "home": 0.42, "draw": 0.26, "away": 0.32},
+      "secondary": {"source": "opta", "home": 0.415, "away": 0.318},
+      "factors": [
+        {"team": "away", "label": "Aston Villa won 6-0 at Fenerbahce on Wed 14 Oct; about 3 days rest", "effect": -0.06, "confidence": 1.0, "source": "uefa_results"}
+      ]
+    },
+    {
+      "id": "PL-BOU-SUN", "competition": "Premier League", "window": "Sun 18 Oct 13:00",
+      "home": "Bournemouth", "away": "Sunderland",
+      "baseline": {"source": "matchsharp", "home": 0.45, "draw": 0.28, "away": 0.28},
+      "secondary": {"source": "opta", "home": 0.50, "away": 0.248},
+      "factors": [
+        {"team": "away", "label": "Sunderland have lost their last three league games (worst run under Le Bris)", "effect": -0.03, "confidence": 0.5, "source": "opta"}
+      ]
+    },
+    {
+      "id": "PL-BHA-CRY", "competition": "Premier League", "window": "Sun 18 Oct 13:00",
+      "home": "Brighton", "away": "Crystal Palace",
+      "baseline": {"source": "matchsharp", "home": 0.63, "draw": 0.20, "away": 0.17},
+      "secondary": {"source": "opta", "home": 0.59, "away": 0.196},
+      "factors": [
+        {"team": "away", "label": "Palace manager Glasner: 17% win rate over his last 29 league games (narrative stat)", "effect": -0.03, "confidence": 0.5, "source": "opta"}
+      ]
+    },
+    {
+      "id": "PL-LEE-MUN", "competition": "Premier League", "window": "Sun 18 Oct 13:00",
+      "home": "Leeds United", "away": "Manchester United",
+      "baseline": {"source": "matchsharp", "home": 0.41, "draw": 0.27, "away": 0.32},
+      "secondary": {"source": "opta", "home": 0.417, "away": 0.316},
+      "factors": [
+        {"team": "away", "label": "Benjamin Sesko ruled out since before the international break; club reportedly weighing surgery (MEN journalist report)", "effect": -0.08, "confidence": 1.0, "source": "men_sesko"},
+        {"team": "away", "label": "Shaw, Mazraoui and Dorgu injured in recent weeks; availability for this game unclear", "effect": -0.03, "confidence": 0.6, "source": "utd_injuries"},
+        {"team": "away", "label": "Man Utd 5 games without a win; pressure on Carrick, Martinez criticism of recruitment", "effect": -0.03, "confidence": 0.6, "source": "opta"},
+        {"team": "away", "label": "Matthijs de Ligt back in the matchday squad after 11 months out (positive, uncertain minutes)", "effect": 0.03, "confidence": 0.5, "source": "men_sesko"}
+      ]
+    },
+    {
+      "id": "PL-NFO-ARS", "competition": "Premier League", "window": "Sun 18 Oct 15:30",
+      "home": "Nottingham Forest", "away": "Arsenal",
+      "baseline": {"source": "matchsharp", "home": 0.16, "draw": 0.26, "away": 0.58},
+      "secondary": {"source": "opta", "home": 0.204, "away": 0.583},
+      "factors": [
+        {"team": "away", "label": "Hincapie out (ankle), listed unavailable by UEFA and reported out", "effect": -0.05, "confidence": 1.0, "source": "false9"},
+        {"team": "away", "label": "Saliba (back) listed unavailable on 13 Oct; no later update found", "effect": -0.05, "confidence": 0.6, "source": "uefa_lineups"},
+        {"team": "away", "label": "Zubimendi (ankle) reported close to a return; uncertain", "effect": -0.04, "confidence": 0.5, "source": "false9"},
+        {"team": "away", "label": "Saka and Odegaard returning to the predicted XI (positive)", "effect": 0.04, "confidence": 0.6, "source": "false9"}
+      ]
+    },
+    {
+      "id": "PL-MCI-IPS", "competition": "Premier League", "window": "Sat 17 Oct 15:00 (Opta only)",
+      "home": "Manchester City", "away": "Ipswich Town",
+      "baseline": {"source": "opta", "home": 0.73, "draw": 0.156, "away": 0.114},
+      "secondary": null,
+      "factors": [
+        {"team": "home", "label": "Man City lost 4-2 at PSG on Wed 14 Oct; about 3 days rest", "effect": -0.06, "confidence": 1.0, "source": "uefa_results"},
+        {"team": "home", "label": "Club found guilty of breaching Premier League rules (reported by Opta); possible distraction", "effect": -0.02, "confidence": 0.5, "source": "opta"}
+      ]
+    },
+    {
+      "id": "PL-COV-TOT", "competition": "Premier League", "window": "Mon 19 Oct (Opta only; home side inferred)",
+      "home": "Coventry City", "away": "Tottenham Hotspur",
+      "baseline": {"source": "opta", "home": 0.239, "draw": 0.247, "away": 0.514},
+      "secondary": null,
+      "factors": [
+        {"team": "away", "label": "Tottenham still winless in 2026/27; Roberto De Zerbi under pressure (narrative)", "effect": -0.03, "confidence": 0.5, "source": "opta"}
+      ]
+    },
+    {
+      "id": "LL-ESP-ATM", "competition": "La Liga", "window": "Sat/Sun 12:00",
+      "home": "Espanyol", "away": "Atletico Madrid",
+      "baseline": {"source": "matchsharp", "home": 0.19, "draw": 0.24, "away": 0.57},
+      "secondary": null,
+      "factors": [
+        {"team": "away", "label": "Koke absent for personal reasons (reported 13 Oct); status for this game unknown", "effect": -0.04, "confidence": 0.5, "source": "uefa_lineups"}
+      ]
+    },
+    {
+      "id": "LL-VIL-ELC", "competition": "La Liga", "window": "Sat/Sun 14:15",
+      "home": "Villarreal", "away": "Elche",
+      "baseline": {"source": "matchsharp", "home": 0.66, "draw": 0.19, "away": 0.15},
+      "secondary": null,
+      "factors": []
+    },
+    {
+      "id": "LL-OSA-RAC", "competition": "La Liga", "window": "Sat/Sun 12:00",
+      "home": "Osasuna", "away": "Racing Santander",
+      "baseline": {"source": "matchsharp", "home": 0.48, "draw": 0.26, "away": 0.26},
+      "secondary": null,
+      "factors": []
+    },
+    {
+      "id": "LL-MAL-RSO", "competition": "La Liga", "window": "Sat/Sun 16:30",
+      "home": "Malaga", "away": "Real Sociedad",
+      "baseline": {"source": "matchsharp", "home": 0.28, "draw": 0.27, "away": 0.45},
+      "secondary": null,
+      "factors": []
+    },
+    {
+      "id": "LL-BET-FCB", "competition": "La Liga", "window": "Sat/Sun 16:30",
+      "home": "Real Betis", "away": "Barcelona",
+      "baseline": {"source": "matchsharp", "home": 0.15, "draw": 0.16, "away": 0.68},
+      "secondary": null,
+      "factors": [
+        {"team": "home", "label": "Betis beat Porto 3-2 in the Champions League on Wed 14 Oct; about 3 days rest", "effect": -0.06, "confidence": 1.0, "source": "uefa_results"}
+      ]
+    },
+    {
+      "id": "LL-RMA-SEV", "competition": "La Liga", "window": "Sat/Sun 19:00",
+      "home": "Real Madrid", "away": "Sevilla",
+      "baseline": {"source": "matchsharp", "home": 0.77, "draw": 0.14, "away": 0.09},
+      "secondary": null,
+      "factors": [
+        {"team": "home", "label": "Real Madrid won 4-3 at Roma on Wed 14 Oct; about 3 days rest", "effect": -0.06, "confidence": 1.0, "source": "uefa_results"}
+      ]
+    },
+    {
+      "id": "SA-VEN-NAP", "competition": "Serie A", "window": "Sat/Sun 13:00",
+      "home": "Venezia", "away": "Napoli",
+      "baseline": {"source": "matchsharp", "home": 0.20, "draw": 0.23, "away": 0.57},
+      "secondary": null,
+      "factors": []
+    },
+    {
+      "id": "SA-BOL-INT", "competition": "Serie A", "window": "Sat/Sun 16:00",
+      "home": "Bologna", "away": "Inter",
+      "baseline": {"source": "matchsharp", "home": 0.15, "draw": 0.23, "away": 0.61},
+      "secondary": null,
+      "factors": []
+    },
+    {
+      "id": "SA-ROM-GEN", "competition": "Serie A", "window": "Sat/Sun 18:45",
+      "home": "Roma", "away": "Genoa",
+      "baseline": {"source": "matchsharp", "home": 0.61, "draw": 0.23, "away": 0.16},
+      "secondary": null,
+      "factors": [
+        {"team": "home", "label": "Roma lost 4-3 to Real Madrid on Wed 14 Oct; about 3 days rest", "effect": -0.06, "confidence": 1.0, "source": "uefa_results"},
+        {"team": "home", "label": "Midfielder Manu Kone reportedly injured (flexor) after 17 min v Real Madrid; single low-credibility source", "effect": -0.04, "confidence": 0.3, "source": "newsy"}
+      ]
+    },
+    {
+      "id": "SA-FIO-COM", "competition": "Serie A", "window": "Sat/Sun 13:00",
+      "home": "Fiorentina", "away": "Como",
+      "baseline": {"source": "matchsharp", "home": 0.28, "draw": 0.26, "away": 0.46},
+      "secondary": null,
+      "factors": [
+        {"team": "away", "label": "Como lost 3-2 at Feyenoord on Wed 14 Oct; about 3 days rest", "effect": -0.06, "confidence": 1.0, "source": "uefa_results"}
+      ]
+    },
+    {
+      "id": "SA-MIL-ATA", "competition": "Serie A", "window": "Sat/Sun 16:00",
+      "home": "AC Milan", "away": "Atalanta",
+      "baseline": {"source": "matchsharp", "home": 0.54, "draw": 0.25, "away": 0.21},
+      "secondary": null,
+      "factors": []
+    },
+    {
+      "id": "SA-JUV-LAZ", "competition": "Serie A", "window": "Sat/Sun 18:45",
+      "home": "Juventus", "away": "Lazio",
+      "baseline": {"source": "matchsharp", "home": 0.57, "draw": 0.25, "away": 0.18},
+      "secondary": null,
+      "factors": []
+    },
+    {
+      "id": "BL-EIV-AUG", "competition": "Bundesliga", "window": "Sat/Sun 13:30",
+      "home": "Elversberg", "away": "Augsburg",
+      "baseline": {"source": "matchsharp", "home": 0.39, "draw": 0.26, "away": 0.35},
+      "secondary": null,
+      "factors": []
+    },
+    {
+      "id": "BL-HSV-VfB", "competition": "Bundesliga", "window": "Sat 13:30 (day assumed)",
+      "home": "Hamburger SV", "away": "Stuttgart",
+      "baseline": {"source": "matchsharp", "home": 0.23, "draw": 0.24, "away": 0.54},
+      "secondary": null,
+      "factors": [
+        {"team": "away", "label": "Stuttgart won 3-0 at Slovan Bratislava on Wed 14 Oct; about 3 days rest if the match is on Saturday", "effect": -0.06, "confidence": 0.7, "source": "uefa_results"}
+      ]
+    },
+    {
+      "id": "BL-S04-M05", "competition": "Bundesliga", "window": "Sat/Sun 13:30",
+      "home": "Schalke 04", "away": "Mainz 05",
+      "baseline": {"source": "matchsharp", "home": 0.31, "draw": 0.27, "away": 0.42},
+      "secondary": null,
+      "factors": []
+    },
+    {
+      "id": "BL-FCU-BVB", "competition": "Bundesliga", "window": "Sat 13:30",
+      "home": "Union Berlin", "away": "Borussia Dortmund",
+      "baseline": {"source": "matchsharp", "home": 0.19, "draw": 0.22, "away": 0.59},
+      "secondary": null,
+      "factors": [
+        {"team": "away", "label": "Dortmund lost 1-0 at Bodo/Glimt on Wed 14 Oct; about 3 days rest", "effect": -0.06, "confidence": 1.0, "source": "uefa_results"}
+      ]
+    },
+    {
+      "id": "BL-SVW-PAD", "competition": "Bundesliga", "window": "Sat/Sun 13:30",
+      "home": "Werder Bremen", "away": "Paderborn",
+      "baseline": {"source": "matchsharp", "home": 0.54, "draw": 0.23, "away": 0.24},
+      "secondary": null,
+      "factors": []
+    },
+    {
+      "id": "BL-FCB-RBL", "competition": "Bundesliga", "window": "Sat 16:30",
+      "home": "Bayern Munich", "away": "RB Leipzig",
+      "baseline": {"source": "matchsharp", "home": 0.79, "draw": 0.12, "away": 0.09},
+      "secondary": null,
+      "factors": []
+    },
+    {
+      "id": "L1-RCS-PSG", "competition": "Ligue 1", "window": "Sat 17 Oct 15:15",
+      "home": "Strasbourg", "away": "Paris Saint-Germain",
+      "baseline": {"source": "matchsharp", "home": 0.14, "draw": 0.17, "away": 0.69},
+      "secondary": null,
+      "factors": [
+        {"team": "away", "label": "PSG beat Man City 4-2 in the Champions League on Wed 14 Oct; about 3 days rest", "effect": -0.06, "confidence": 1.0, "source": "uefa_results"}
+      ]
+    },
+    {
+      "id": "L1-LIL-BRE", "competition": "Ligue 1", "window": "Sat/Sun 18:45",
+      "home": "Lille", "away": "Brest",
+      "baseline": {"source": "matchsharp", "home": 0.51, "draw": 0.25, "away": 0.24},
+      "secondary": null,
+      "factors": []
+    },
+    {
+      "id": "L1-TRO-LEN", "competition": "Ligue 1", "window": "Sat/Sun 18:45",
+      "home": "Troyes", "away": "Lens",
+      "baseline": {"source": "matchsharp", "home": 0.24, "draw": 0.24, "away": 0.52},
+      "secondary": null,
+      "factors": []
+    },
+    {
+      "id": "L1-LOR-MON", "competition": "Ligue 1", "window": "Sat/Sun 13:15",
+      "home": "Lorient", "away": "Monaco",
+      "baseline": {"source": "matchsharp", "home": 0.26, "draw": 0.29, "away": 0.46},
+      "secondary": null,
+      "factors": []
+    },
+    {
+      "id": "L1-HAV-AUX", "competition": "Ligue 1", "window": "Sat/Sun 15:15",
+      "home": "Le Havre", "away": "Auxerre",
+      "baseline": {"source": "matchsharp", "home": 0.42, "draw": 0.28, "away": 0.30},
+      "secondary": null,
+      "factors": []
+    },
+    {
+      "id": "L1-LYO-NIC", "competition": "Ligue 1", "window": "Sat/Sun 18:45",
+      "home": "Lyon", "away": "Nice",
+      "baseline": {"source": "matchsharp", "home": 0.57, "draw": 0.23, "away": 0.20},
+      "secondary": null,
+      "factors": []
+    }
+  ],
+  "news_log": [
+    {"date": "2026-10-16", "item": "Champions League MD2 results: Liverpool 6-3 LASK, Villa 6-0 Fenerbahce, Real Madrid 4-3 Roma, PSG 4-2 Man City, Dortmund 0-1 Bodo/Glimt, Como 2-3 Feyenoord, Betis 3-2 Porto, Stuttgart 3-0 Slovan, Atletico 2-0 Man Utd, Arsenal 3-0 Lille.", "tier": "Confirmed", "source": "uefa_results"},
+    {"date": "2026-10-15", "item": "Benjamin Sesko injury setback; Man Utd reportedly 'not ruling out' surgery. Ruled out since before the international break.", "tier": "Credible report (MEN journalist)", "source": "men_sesko"},
+    {"date": "2026-10-13", "item": "UEFA lists Saliba (back) and Zubimendi (ankle) out and Hincapie (ankle) out for Arsenal; Mbappe suspended for Lille (European suspension only).", "tier": "Official-based prediction list (dated 13 Oct; may be outdated)", "source": "uefa_lineups"},
+    {"date": "2026-10-15", "item": "Arsenal predicted XI for Forest: Saka and Odegaard return; Hincapie out, Zubimendi close.", "tier": "Credible preview (unconfirmed)", "source": "false9"},
+    {"date": "2026-10-15", "item": "Manu Kone left Roma v Real Madrid after 17 minutes with a flexor injury.", "tier": "Low credibility (single aggregator, no club confirmation found)", "source": "newsy"},
+    {"date": "2026-10-16", "item": "Man Utd: Lisandro Martinez publicly criticised recruitment; Carrick under growing pressure before Leeds game.", "tier": "Credible report (Opta/press)", "source": "opta"},
+    {"date": "2026-10-12", "item": "Liverpool's Gakpo, Isak and Szoboszlai missed the 10 Oct home defeat to Man City; Iraola said returns were unlikely for the LASK game.", "tier": "Club-source quote (dated; current status unknown)", "source": "anfield"},
+    {"date": "2026-10-16", "item": "Man City found guilty of breaching Premier League rules (reported by Opta; no sanction detail in source).", "tier": "Reported (sanction detail not verified)", "source": "opta"}
+  ]
+}
