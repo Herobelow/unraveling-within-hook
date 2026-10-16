@@ -91,3 +91,17 @@ python3 team_goal_picks.py --no-pdf # CSVs only, no reportlab needed
 Limits: the Poisson model underweights blow-outs and surprise scorers, so real hit rates on the
 over side are likely below the stated probabilities. No team is near-certain to score 3+. The
 requested date 17/10/2025 is in the past, so this covers 17/10/2026.
+
+## Verified-only picks (clean sheet)
+
+`verified_picks.py` rebuilds the sheet from `data/verified_picks_2026-10-17_18.json`,
+which lists only the picks that passed these checks: fixture and kick-off confirmed,
+team news checked in at least two sources, and the goal-model probability at or above
+the threshold (over 2 at >=50%, below 3 at >=93%). The script refuses to build the
+sheet if a pick is missing from the model data, mis-matched, or below threshold.
+
+Outputs: `output/verified_goal_picks_2026-10-17.pdf` (2 pages, landscape A4, with the
+exclusions and their reasons) and `output/verified_goal_picks.csv`.
+
+Run: `/tmp/pdfenv/bin/python verified_picks.py` (needs reportlab; `--no-pdf` for CSV only).
+Sports4Cast's own accuracy record could not be verified, so its numbers are one input, not proof.

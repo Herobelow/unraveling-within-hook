@@ -1,0 +1,110 @@
+{
+  "as_of": "2026-10-16",
+  "weekend": "Saturday 17 and Sunday 18 October 2026 (the requested 17/10/2025 date is in the past, so this is the 17/10/2026 weekend)",
+  "method": "A pick is kept only if (1) the fixture and kick-off are confirmed and do not conflict between sources, (2) team news for the picked team's own attack was found in at least two sources and does not point the other way, and (3) the goal model probability clears the threshold. Probabilities come from team_goal_picks.py. Sports4Cast's own accuracy record could not be verified, so its numbers are one input, not proof.",
+  "picks": [
+    {
+      "match_id": "BL-FCB-RBL",
+      "team": "Bayern Munich",
+      "side": "over2",
+      "kickoff_utc": "Sat 17 Oct 16:30",
+      "news": "Leipzig missing Baumgartner, Ouedraogo, Guiu and Gebel. Musiala out for Bayern.",
+      "sources": "Sports Mole, Rotowire, FC Bayern official site"
+    },
+    {
+      "match_id": "PL-NFO-ARS",
+      "team": "Nottingham Forest",
+      "side": "below3",
+      "kickoff_utc": "Sun 18 Oct 15:30",
+      "news": "Forest out: Igor Jesus (calf), Nicolo Savona (knee). Milenkovic out per ESPN, or a late fitness test per Yahoo. Arsenal out: Saliba, Tzolis, Hincapie; Zubimendi doubtful.",
+      "sources": "ESPN; Yahoo Sports; FotMob; Goal"
+    },
+    {
+      "match_id": "SA-BOL-INT",
+      "team": "Bologna",
+      "side": "below3",
+      "kickoff_utc": "Sat 17 Oct 16:00",
+      "news": "Bologna out: Orsolini (thigh), Holm (long-term). Mbangula and Theate doubtful. Inter out: Lautaro Martinez (hamstring), Curtis Jones, Pavard. Stones doubtful.",
+      "sources": "Inter official site; Sports Mole; Flashscore; Yahoo Sports; FotMob"
+    },
+    {
+      "match_id": "SA-JUV-LAZ",
+      "team": "Lazio",
+      "side": "below3",
+      "kickoff_utc": "Sun 18 Oct 18:45",
+      "news": "Lazio out: Gudmundsson (shoulder), Cancellieri, Rovella, Marusic. Juventus out: Yildiz, Locatelli, Thuram, Ekhator, Boga, Grabara. Spalletti serving a touchline ban.",
+      "sources": "Goal; Sports Mole; The Athletic box score; FotMob"
+    },
+    {
+      "match_id": "SA-ROM-GEN",
+      "team": "Genoa",
+      "side": "below3",
+      "kickoff_utc": "Sat 17 Oct 18:45",
+      "news": "Genoa out: Colombo, Sow, Havel, Meichtry, Venturino; Amorim and Otoa doubtful. Roma out: Svilar, Malen (suspended), Kone (grade-1 injury, confirmed by club), Dybala (calf, expected back next week). Cristante out or doubtful.",
+      "sources": "Roma club statement via romapress and Goal; WhoScored; Sports Mole"
+    },
+    {
+      "match_id": "SCO-DUN-RAN",
+      "team": "Dundee FC",
+      "side": "below3",
+      "kickoff_utc": "Sat 17 Oct 20:00",
+      "news": "Dundee out: Murray, Robertson, Moorhouse (cruciate); Wales and Westley out. Finnigan and Reilly doubtful. Rangers out: Shankland, Chermiti, Yokota, Devlin; Sterling cleared.",
+      "sources": "BBC Sport; LiveScore; Rangers News; Dundee FC official site"
+    },
+    {
+      "match_id": "ERE-CAM-AZ",
+      "team": "SC Cambuur",
+      "side": "below3",
+      "kickoff_utc": "Sun 18 Oct 12:30",
+      "news": "Cambuur out: Amofa (cruciate, long-term), Visser (knee); Asselman doubtful. AZ out: Hornkamp, Smit, Resink.",
+      "sources": "opstellingvandaag.nl; WhoScored; FotMob; voetbalwedden.net"
+    },
+    {
+      "match_id": "JPN-MAC-AVI",
+      "team": "Avispa Fukuoka",
+      "side": "below3",
+      "kickoff_utc": "Sun 18 Oct 07:00",
+      "news": "Avispa: 1 win in 8 games and 9 goals scored (dailysports); 17 scored in 18 (Fox Sports). Kazuki Fukushima out (meniscus); Takumi Kamijima suspended.",
+      "sources": "dailysports.net; Fox Sports standings; footballpredictions.net; Transfermarkt"
+    },
+    {
+      "match_id": "TUR-ERZ-EYU",
+      "team": "Eyupspor",
+      "side": "below3",
+      "kickoff_utc": "Sat 17 Oct 10:30",
+      "news": "Eyupspor have scored 2 and conceded 20 in 7 league games. Out or doubtful: Sabiri (muscle), El Yamiq (injury), Abdullahi (suspended). Erzurumspor: no unavailable players reported.",
+      "sources": "Sports Mole; FotMob; mynet.com; sondakika.com; aksiyon.com.tr"
+    },
+    {
+      "match_id": "SWE-HAL-HAM",
+      "team": "Halmstad",
+      "side": "below3",
+      "kickoff_utc": "Sun 18 Oct 14:30",
+      "news": "Halmstad: 16 scored and 44 conceded in 23 games, 16th of 16 (Allsvenskan table). Oliver Jordan Hagen doubtful (one source). A red-card suspension for Boman is reported by one site but he is in bet365's probable XI, so this is conflicting and minor. Hammarby: Victor Eriksson suspended; Amin Boudri out for the season.",
+      "sources": "Wikipedia 2026 Allsvenskan table; bet365 Sweden; mediapronos.com; Sofascore"
+    },
+    {
+      "match_id": "BRA-BOT-CHA",
+      "team": "Chapecoense",
+      "side": "below3",
+      "kickoff_utc": "Sat 17 Oct 21:00",
+      "news": "Chapecoense are bottom: 18 points, goal difference -31. They lost 4-0 to Vitoria and 4-1 to Athletico. Top scorer Marcinho suspended (third yellow card); Heitor, Max and Rafael Carvalheira out; Camilo returns.",
+      "sources": "CBF official site; La Nacion; Flashscore Brasil; Gazeta Esportiva; ge.globo"
+    }
+  ],
+  "excluded": [
+    {"match": "ADO Den Haag v PSV Eindhoven", "pick": "PSV over 2 (57%)", "reason": "PSV without Pepi, Wanner, Lammers and Plea. Not confident enough for the over side."},
+    {"match": "Real Betis v Barcelona", "pick": "Barcelona over 2 (52%)", "reason": "52% is below the confidence bar."},
+    {"match": "Real Madrid v Sevilla", "pick": "Real Madrid over 2 (51%)", "reason": "Vinicius suspended; Militao, Rodrygo, Asencio and Mendy out. Too doubtful."},
+    {"match": "Panathinaikos v Asteras Tripolis", "pick": "Panathinaikos over 2 (62%)", "reason": "Fixture confirmed, but no team-news source was found and the estimate rests on one model."},
+    {"match": "Lyngby v FC Nordsjaelland", "pick": "Lyngby under 3 (95%)", "reason": "Conflicting evidence. Lyngby have 12 goals in 10 games, but spilxperten reports they have the second-highest xG in the league. Doubtful, so left out."},
+    {"match": "Espanyol v Atletico Madrid", "pick": "Espanyol under 3 (94%)", "reason": "Only partial team news (Kike Garcia doubtful). Espanyol's own attacking form not verified."},
+    {"match": "Genclerbirligi v Galatasaray", "pick": "Genclerbirligi under 3 (94%)", "reason": "The team news found concerns Galatasaray, not Genclerbirligi's attack. Scoring form not verified."},
+    {"match": "Sanfrecce Hiroshima v Kyoto Sanga", "pick": "Kyoto under 3 (94%)", "reason": "No current goal-rate data verified; Hiroshima are strong at home. Left out."},
+    {"match": "San Jose Earthquakes v Nashville SC", "pick": "San Jose under 3 (95%)", "reason": "The model uses xG 0.81 for San Jose, but another preview gives 1.15. The models conflict."},
+    {"match": "PAOK v Iraklis", "pick": "Iraklis under 3 (95%)", "reason": "Sources disagree on the date (Sat 17 vs Sun 18) and the kick-off time."},
+    {"match": "Atlanta United v Inter Miami", "pick": "Atlanta under 3 (95%)", "reason": "Atlanta scored three goals in midweek. Recent change, so slight doubt."},
+    {"match": "NEC Nijmegen v Fortuna Sittard", "pick": "Fortuna under 3 (94%)", "reason": "Kick-off and team-news sources conflict, and Fortuna have a strong away record."},
+    {"match": "Tokyo Verdy v FC Tokyo", "pick": "Tokyo Verdy under 3 (95%)", "reason": "No reliable team-news source found."}
+  ]
+}

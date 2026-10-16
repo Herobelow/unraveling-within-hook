@@ -58,6 +58,7 @@ def team_rows(analysed: list[dict]) -> list[dict]:
         ):
             over, below = team_goal_probs(lam)
             rows.append({
+                "match_id": m.get("id", ""),
                 "competition": m["competition"],
                 "window": m["window"],
                 "match": f"{m['home']} v {m['away']}",
@@ -95,7 +96,8 @@ def load_analysed(files: list[Path] = DATA_FILES) -> tuple[list[dict], dict]:
     sources: dict = {}
     for f in files:
         data = json.loads(f.read_text(encoding="utf-8"))
-        analysed += [p.analyse(m) for m in data["matches"]]
+        for m in data["matches"]:
+            analysed.append({**p.analyse(m), "id": m["id"]})
         sources.update(data.get("sources", {}))
     return analysed, sources
 
