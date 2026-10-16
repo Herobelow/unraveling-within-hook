@@ -69,3 +69,25 @@ single or low-credibility source = 0.3.
 - **News reliability.** One item (Man Utd surgery, Sesko) comes from a journalist report. The Roma midfielder Kone injury comes from a single low-credibility aggregator and carries weight 0.3. Liverpool's Gakpo, Isak and Szoboszlai status is unconfirmed for this game.
 - **Coverage gaps.** Championship, League Two, Champions League matchday 3 (20-21 Oct) fixtures and African / Kenyan leagues are not modelled.
 - **Not betting advice.** These are estimates. Probabilities for individual matches are often far from certain, and no model guarantees a result. If you bet, keep stakes you can afford to lose.
+
+## Team goal picks (over 2 / below 3 goals), weekend 17-18 Oct 2026
+
+Added later: a second model run that works per team, across 10 more leagues (Eredivisie,
+Super Lig, Scottish Premiership, Greek Super League, Danish Superliga, Allsvenskan,
+Brazilian Serie A, Argentinian Primera, J1 League, MLS) plus the top-five leagues.
+
+- `data/other_leagues_2026-10-17_18.json`: 78 matches from Sports4Cast's 1X2 predictions (sources listed inside).
+- `team_goal_picks.py`: for each team, P(3+ goals) = OVER 2 side, and P(0-2 goals) = BELOW 3 side. Selection: OVER side only at P >= 0.50; BELOW side from P >= 0.93, up to 45 picks; total capped at 50.
+- `test_team_picks.py`: tests for the probability maths and the selection rules.
+- Outputs: `output/team_goal_picks_2026-10-17.pdf` (two columns), `output/team_goal_picks.csv`, `output/team_goal_probabilities.csv`.
+
+Run (the PDF needs reportlab: `pip install reportlab`):
+
+```bash
+python3 team_goal_picks.py          # writes CSVs and PDF
+python3 team_goal_picks.py --no-pdf # CSVs only, no reportlab needed
+```
+
+Limits: the Poisson model underweights blow-outs and surprise scorers, so real hit rates on the
+over side are likely below the stated probabilities. No team is near-certain to score 3+. The
+requested date 17/10/2025 is in the past, so this covers 17/10/2026.
