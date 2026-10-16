@@ -1,0 +1,12 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "⚡ Run Bolt Facebook Agent",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/facebook_agent.py",
+      "console": "integratedTerminal"
+    }
+  ]
+}

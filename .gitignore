@@ -1,2 +1,5 @@
 __pycache__/
 *.pyc
+.env
+facebook_agent_state.json
+
