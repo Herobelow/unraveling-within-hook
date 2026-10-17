@@ -6,7 +6,7 @@ from pathlib import Path
 import independent_picks as ip
 
 HERE = Path(__file__).resolve().parent
-DATA = json.loads((HERE / "data" / "independent_inputs_expanded_2026-10-17_18.json").read_text(encoding="utf-8"))
+DATA = json.loads((HERE / "data" / "independent_inputs_54plus_japan_2026-10-17_18.json").read_text(encoding="utf-8"))
 
 BANNED_KEYS = {"odds", "sports4cast", "matchsharp", "opta", "baseline", "bookmaker"}
 
@@ -27,8 +27,14 @@ class ExpandedDataTests(unittest.TestCase):
 
     def test_lower_leagues_included(self):
         comps = {m["competition"] for m in DATA["matches"]}
-        for league in ("EFL Championship", "EFL League One", "EFL League Two", "Serie B"):
+        for league in ("EFL Championship", "EFL League One", "EFL League Two", "Serie B",
+                       "J1 League", "J2 League", "J3 League"):
             self.assertIn(league, comps)
+
+    def test_japan_played_today_included(self):
+        japan = [m for m in DATA["matches"] if m["competition"] in ("J1 League", "J2 League", "J3 League")]
+        self.assertGreaterEqual(len(japan), 20)
+        self.assertTrue(all("Sat 17 Oct" in m["kickoff_utc"] for m in japan))
 
     def test_no_copied_prediction_fields(self):
         self.assertTrue(BANNED_KEYS.isdisjoint(set(flatten_keys(DATA))))
@@ -43,7 +49,7 @@ class ExpandedDataTests(unittest.TestCase):
 
     def test_lower_league_teams_unadjusted(self):
         # Expansion honesty rule: no sourced news => no silent adjustment.
-        lower = {"EFL Championship", "EFL League One", "EFL League Two", "Serie B"}
+        lower = {"EFL Championship", "EFL League One", "EFL League Two", "Serie B", "J2 League", "J3 League"}
         for m in DATA["matches"]:
             if m["competition"] in lower:
                 for side in ("home", "away"):

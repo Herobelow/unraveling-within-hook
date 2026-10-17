@@ -136,3 +136,17 @@ Result at the same strict bars (over >= 55%, below >= 93%): **1 over-2 pick**
 (Stockport County, 79.5%) and **36 below-3 picks**; the PDF also lists all 54
 matches evaluated so the full scope is visible. Still no prediction site's
 picks, odds or xG anywhere.
+
+## Japan added (17 Oct 2026) — CURRENT
+
+`data/independent_inputs_54plus_japan_2026-10-17_18.json` adds the Japanese
+leagues playing on Saturday 17 Oct 2026: **J1 (8 fixtures), J2 (9), J3 (6)** —
+77 matches / 154 teams in total. Because of the time difference, those matches
+had already kicked off (several had finished) before this run. To keep the
+model honest, every Japanese team's record was restored to its **pre-match**
+state by subtracting the 17 Oct result from the published table (BBC Sport J1
+table; J.League official standings for J2/J3); today's scores are never used
+as model inputs. League rates: J1 2.91, J2 2.60 (260/100), J3 2.89 (289/100).
+No club-confirmed news adjustment is applied to the new Japanese teams (1.00).
+
+Run: `python independent_picks.py --input data/independent_inputs_54plus_japan_2026-10-17_18.json --pdf independent_goal_picks_japan_2026-10-17.pdf --csv independent_goal_picks_japan.csv`

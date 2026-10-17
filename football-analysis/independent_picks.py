@@ -128,7 +128,7 @@ def write_pdf(data, rows, over, below, path: Path) -> None:
             "team news. Formula and all inputs are printed so anyone can re-run them.", sub),
         Paragraph(
             f"<b>Scope: {len({r['id'] for r in rows})} matches / {len(rows)} teams evaluated, including lower-division "
-            f"football (EFL Championship, League One, League Two, Serie B). Result: {len(over)} over-2 pick(s) and "
+            f"football (EFL Championship, League One, League Two, Serie B, Japan J1/J2/J3). Result: {len(over)} over-2 pick(s) and "
             f"{len(below)} below-3 pick(s) pass the confidence bars</b> "
             f"(over 2 = P(team scores 3+) &ge; {MIN_OVER:.0%}; below 3 = P(team scores 0–2) &ge; {MIN_BELOW:.0%}). "
             "Where this independent model disagrees with a copied baseline, the copied one is discarded. "
