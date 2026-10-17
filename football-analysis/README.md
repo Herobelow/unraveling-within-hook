@@ -164,3 +164,23 @@ Bars: P(total >= 2) >= 85% and P(total <= 3) >= 85%. Result: **15 OVER picks
 and 16 BELOW picks**; P(total >= 3) ("more than 2") is printed alongside.
 Outputs: `output/match_total_goal_picks_2026-10-17.pdf`, `output/match_total_goal_picks.csv`.
 Run: `python match_total_picks.py`
+
+## Recheck & improved model v2 (17 Oct 2026)
+
+User flagged two played results: FC Gifu 1-0 Fukushima (OVER pick, lost) and
+Tochigi City 1-1 Yokohama FC (OVER pick; 2 goals only satisfies the loose
+"2 or more" wording). Recheck findings: (1) 9-10 game scoring rates were taken
+at face value - one freak result (7-0, 5-0) inflated ratings; (2) plain
+Poisson under-prices 0-0/1-1, the exact scorelines that occurred; (3) no
+regression to the league mean.
+
+`improved_totals.py` fixes this: empirical shrinkage of scoring rates
+(4-game prior) and conceding rates (6-game prior, shrunk harder) towards the
+league average; Dixon-Coles low-score correction (rho = -0.10); OVER redefined
+as total >= 3 and bars raised to P >= 72% (over) / P >= 92% (under <=3).
+Under v2, Tochigi City drops out (68.3%); Gifu still rated 80.1% and still
+lost - a genuine 80% chance fails 1 in 5. No honest model can promise 90%
+accuracy on goals markets (published O/U benchmarks ~55-60%); the only
+legitimate route is extreme selectivity. No Sunday 18 Oct match clears the v2
+bars, so the revised sheet has no new confident pick. Audit PDF:
+`output/recheck_improved_v2_2026-10-17.pdf`.
