@@ -127,7 +127,9 @@ def write_pdf(data, rows, over, below, path: Path) -> None:
             "scored and conceded in league matches this season, each league's goals-per-match average, and "
             "team news. Formula and all inputs are printed so anyone can re-run them.", sub),
         Paragraph(
-            f"<b>Result: {len(over)} over-2 pick(s) and {len(below)} below-3 pick(s) pass the confidence bars</b> "
+            f"<b>Scope: {len({r['id'] for r in rows})} matches / {len(rows)} teams evaluated, including lower-division "
+            f"football (EFL Championship, League One, League Two, Serie B). Result: {len(over)} over-2 pick(s) and "
+            f"{len(below)} below-3 pick(s) pass the confidence bars</b> "
             f"(over 2 = P(team scores 3+) &ge; {MIN_OVER:.0%}; below 3 = P(team scores 0–2) &ge; {MIN_BELOW:.0%}). "
             "Where this independent model disagrees with a copied baseline, the copied one is discarded. "
             "Rumours are shown as UNVERIFIED and change nothing unless a club confirms them. Analysis only, not betting advice.", sub),
@@ -178,11 +180,32 @@ def write_pdf(data, rows, over, below, path: Path) -> None:
                                ("TOPPADDING", (0, 0), (-1, -1), 2), ("BOTTOMPADDING", (0, 0), (-1, -1), 2)]))
         story += [Paragraph("Near misses — left out", h2), t]
 
+    # Every match evaluated, so the full scope (incl. lower leagues) is visible.
+    by_match = {}
+    for r in rows:
+        by_match.setdefault(r["id"], {})[r["venue"]] = r
+    body = [[Paragraph("Match", head), Paragraph("Competition", head),
+             Paragraph("Home team: P(3+) / P(0-2)", head), Paragraph("Away team: P(3+) / P(0-2)", head)]]
+    for mid, sides in by_match.items():
+        h, a = sides["home"], sides["away"]
+        fmt = lambda r: f"{r['team']}: {r['p_over_2'] * 100:.0f}% / {r['p_below_3'] * 100:.0f}%"
+        body.append([Paragraph(h["match"], cell), Paragraph(h["competition"], cell),
+                     Paragraph(fmt(h), cell), Paragraph(fmt(a), cell)])
+    t = Table(body, colWidths=[77 * mm, 40 * mm, 80 * mm, 80 * mm], repeatRows=1)
+    t.setStyle(TableStyle([("BACKGROUND", (0, 0), (-1, 0), colors.HexColor("#555555")),
+                           ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
+                           ("ROWBACKGROUNDS", (0, 1), (-1, -1), [colors.HexColor("#f7f7f7"), colors.white]),
+                           ("GRID", (0, 0), (-1, -1), 0.25, colors.HexColor("#bbbbbb")),
+                           ("TOPPADDING", (0, 0), (-1, -1), 1.8), ("BOTTOMPADDING", (0, 0), (-1, -1), 1.8)]))
+    story += [Paragraph(f"All {len(by_match)} matches evaluated (top flights + lower leagues)", h2), t]
+
     story += [Spacer(1, 6), Paragraph(
-        "Sources of facts (not predictions): league tables and season goal totals (BBC Sport, Wikipedia "
-        "season pages, J.League, SoccerStats), club statements (FC Bayern, Inter, Roma/Gasperini), and "
+        "Sources of facts (not predictions): league tables and season goal totals (BBC Sport tables for the "
+        "Premier League and EFL Championship/League One/League Two, Wikipedia season pages including Serie B, "
+        "J.League, SoccerStats), club statements (FC Bayern, Inter, Roma/Gasperini), and "
         "match previews reporting confirmed absences (ESPN, BBC Sport, Sports Mole, FotMob, ge.globo). "
-        "Full inputs: football-analysis/data/independent_inputs_2026-10-17_18.json. Small samples early in "
+        "Full inputs are in the JSON file named with this PDF (independent_inputs_expanded_2026-10-17_18.json "
+        "for the 54-match set). Small samples early in "
         "the season make these estimates uncertain; treat probabilities as rough, not exact.", small)]
 
     doc = SimpleDocTemplate(str(path), pagesize=landscape(A4), leftMargin=10 * mm, rightMargin=10 * mm,
@@ -195,14 +218,17 @@ def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--out", type=Path, default=DEFAULT_OUT)
     ap.add_argument("--no-pdf", action="store_true")
+    ap.add_argument("--input", type=Path, default=INPUT)
+    ap.add_argument("--pdf", default="independent_goal_picks_2026-10-17.pdf")
+    ap.add_argument("--csv", default="independent_goal_picks.csv")
     args = ap.parse_args(argv)
-    data = json.loads(INPUT.read_text(encoding="utf-8"))
+    data = json.loads(args.input.read_text(encoding="utf-8"))
     rows = analyse(data)
     over, below = select(rows)
     args.out.mkdir(parents=True, exist_ok=True)
-    write_csv(rows, over, below, args.out / "independent_goal_picks.csv")
+    write_csv(rows, over, below, args.out / args.csv)
     if not args.no_pdf:
-        write_pdf(data, rows, over, below, args.out / "independent_goal_picks_2026-10-17.pdf")
+        write_pdf(data, rows, over, below, args.out / args.pdf)
     print(f"Teams evaluated: {len(rows)}  OVER 2: {len(over)}  BELOW 3: {len(below)}")
     for r in sorted(rows, key=lambda r: -max(r["p_over_2"], r["p_below_3"])):
         tag = "OVER " if r in over else "BELOW" if r in below else "  -  "

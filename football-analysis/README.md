@@ -118,3 +118,21 @@ baselines and are **superseded — do not use them**.
 Run: `/tmp/pdfenv/bin/python independent_picks.py` (reportlab needed for the PDF).
 Outputs: `output/independent_goal_picks_2026-10-17.pdf`, `output/independent_goal_picks.csv`.
 On real-event data alone, no team clears the 55% over-2 bar; 12 teams clear the 93% below-3 bar.
+
+## Expanded 54-match set incl. lower leagues (17 Oct 2026) — CURRENT
+
+`data/independent_inputs_expanded_2026-10-17_18.json` extends the independent
+model to **54 matches / 108 teams**: the original 11 top-flight fixtures plus
+EFL Championship (11), EFL League One (11), EFL League Two (12) and Serie B (9),
+Sat 17 – Sun 18 Oct 2026. Team P/GF/GA come from the BBC Sport league tables
+(EFL) and the Wikipedia Serie B table; league goals-per-match from the
+Wikipedia season pages. For lower-league teams no club-confirmed news was
+sourced, so `attack_adj = 1.00` — those picks rest on real scoring/conceding
+records only, and the PDF says so on every row.
+
+Run: `python independent_picks.py --input data/independent_inputs_expanded_2026-10-17_18.json --pdf independent_goal_picks_50plus_2026-10-17.pdf --csv independent_goal_picks_50plus.csv`
+
+Result at the same strict bars (over >= 55%, below >= 93%): **1 over-2 pick**
+(Stockport County, 79.5%) and **36 below-3 picks**; the PDF also lists all 54
+matches evaluated so the full scope is visible. Still no prediction site's
+picks, odds or xG anywhere.

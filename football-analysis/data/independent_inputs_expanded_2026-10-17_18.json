@@ -1,0 +1,1187 @@
+{
+  "as_of": "2026-10-17",
+  "weekend": "Saturday 17 and Sunday 18 October 2026 (plus Mon 19 MLS in the original top-flight set)",
+  "method": "Independent model. No prediction, odds or xG figures from any prediction site are used. Inputs are real events only: goals scored/conceded in league matches this season (league tables), the league's goals-per-match average, and team news. Confirmed absences adjust a team's attack by the stated multiplier. Rumours are listed separately, labelled UNVERIFIED, and are given a multiplier of 1.0 (no effect) unless confirmed by a club. Expanded set: the original 11 top-flight fixtures plus lower-division fixtures (EFL Championship, League One, League Two, Serie B). For the lower-league teams no club-confirmed news adjustment was sourced, so attack_adj = 1.00 and the picks rest on real scoring/conceding records only. No prediction site's picks, odds or xG are used anywhere.",
+  "home_factor": 1.1,
+  "away_factor": 0.9,
+  "matches": [
+    {
+      "id": "BL-FCB-RBL",
+      "competition": "Bundesliga",
+      "kickoff_utc": "Sat 17 Oct 16:30",
+      "league_goals_per_match": 3.76,
+      "league_source": "Wikipedia 2026-27 Bundesliga: 173 goals in 46 matches",
+      "home": {
+        "team": "Bayern Munich",
+        "played": 5,
+        "gf": 16,
+        "ga": 4,
+        "attack_adj": 0.92,
+        "news": "CONFIRMED (club/fcbayern.com): Musiala out (muscle tear). Attack -8%.",
+        "rumour": "UNVERIFIED: Bild reported Musiala also likely to miss Arsenal; club rehab reports agree he is not ready. No effect beyond the confirmed absence."
+      },
+      "away": {
+        "team": "RB Leipzig",
+        "played": 5,
+        "gf": 15,
+        "ga": 5,
+        "attack_adj": 0.9,
+        "news": "CONFIRMED (multiple previews/FotMob): Guiu, Baumgartner, Ouedraogo out. Attack -10%. Leipzig have scored 14 of 15 league goals at home and lost both away games (fcbayern.com facts).",
+        "rumour": ""
+      }
+    },
+    {
+      "id": "PL-NFO-ARS",
+      "competition": "Premier League",
+      "kickoff_utc": "Sun 18 Oct 15:30",
+      "league_goals_per_match": 2.95,
+      "league_source": "Wikipedia 2026-27 Premier League: 177 goals in 60 matches",
+      "home": {
+        "team": "Nottingham Forest",
+        "played": 6,
+        "gf": 5,
+        "ga": 8,
+        "attack_adj": 0.92,
+        "news": "CONFIRMED (ESPN/Yahoo): Igor Jesus (calf) and Savona out. Attack -8%.",
+        "rumour": "UNVERIFIED: Milenkovic return reports conflict (ESPN out vs Yahoo late test); he is a defender, no attack effect."
+      },
+      "away": {
+        "team": "Arsenal",
+        "played": 6,
+        "gf": 10,
+        "ga": 5,
+        "attack_adj": 1.03,
+        "news": "CONFIRMED (Standard/Arteta): Saka and Odegaard expected to return. Attack +3%. Saliba, Tzolis, Hincapie out (defence/midfield).",
+        "rumour": ""
+      }
+    },
+    {
+      "id": "SA-BOL-INT",
+      "competition": "Serie A",
+      "kickoff_utc": "Sat 17 Oct 16:00",
+      "league_goals_per_match": 2.87,
+      "league_source": "Wikipedia 2026-27 Serie A: 172 goals in 60 matches",
+      "home": {
+        "team": "Bologna",
+        "played": 6,
+        "gf": 5,
+        "ga": 7,
+        "attack_adj": 0.9,
+        "news": "CONFIRMED (Sports Mole/Flashscore/FotMob): Orsolini (thigh) and Holm out; Mbangula doubtful. Attack -10%.",
+        "rumour": ""
+      },
+      "away": {
+        "team": "Inter",
+        "played": 6,
+        "gf": 18,
+        "ga": 8,
+        "attack_adj": 0.9,
+        "news": "CONFIRMED (Inter official statement via press): Lautaro Martinez hamstring out; Pavard and Curtis Jones out. Attack -10%.",
+        "rumour": ""
+      }
+    },
+    {
+      "id": "SA-JUV-LAZ",
+      "competition": "Serie A",
+      "kickoff_utc": "Sun 18 Oct 18:45",
+      "league_goals_per_match": 2.87,
+      "league_source": "Wikipedia 2026-27 Serie A: 172 goals in 60 matches",
+      "home": {
+        "team": "Juventus",
+        "played": 6,
+        "gf": 9,
+        "ga": 5,
+        "attack_adj": 0.88,
+        "news": "CONFIRMED (Goal/Sports Mole): Yildiz, Locatelli, Thuram, Ekhator, Boga out; Spalletti touchline ban. Attack -12%.",
+        "rumour": ""
+      },
+      "away": {
+        "team": "Lazio",
+        "played": 6,
+        "gf": 11,
+        "ga": 4,
+        "attack_adj": 0.92,
+        "news": "CONFIRMED (Goal/The Athletic): Gudmundsson and Cancellieri out; Rovella and Marusic doubtful. Attack -8%.",
+        "rumour": "UNVERIFIED: Rovella/Marusic possible returns (Yahoo) — not counted."
+      }
+    },
+    {
+      "id": "SA-ROM-GEN",
+      "competition": "Serie A",
+      "kickoff_utc": "Sat 17 Oct 18:45",
+      "league_goals_per_match": 2.87,
+      "league_source": "Wikipedia 2026-27 Serie A: 172 goals in 60 matches",
+      "home": {
+        "team": "Roma",
+        "played": 6,
+        "gf": 14,
+        "ga": 3,
+        "attack_adj": 0.82,
+        "news": "CONFIRMED (Roma coach Gasperini, club statement): Malen suspended; Kone grade-1 injury out; Dybala calf, expected back next week; Svilar out. Attack -18%.",
+        "rumour": ""
+      },
+      "away": {
+        "team": "Genoa",
+        "played": 6,
+        "gf": 5,
+        "ga": 11,
+        "attack_adj": 0.9,
+        "news": "CONFIRMED (WhoScored/Sports Mole): Colombo, Sow, Havel, Meichtry, Venturino out. Attack -10%.",
+        "rumour": ""
+      }
+    },
+    {
+      "id": "SCO-DUN-RAN",
+      "competition": "Scottish Premiership",
+      "kickoff_utc": "Sat 17 Oct 20:00",
+      "league_goals_per_match": 2.56,
+      "league_source": "Wikipedia 2026-27 Scottish Premiership: 123 goals in 48 matches",
+      "home": {
+        "team": "Dundee FC",
+        "played": 8,
+        "gf": 11,
+        "ga": 8,
+        "attack_adj": 0.88,
+        "news": "CONFIRMED (BBC Sport): Murray, Robertson, Moorhouse long-term out; Wales and Westley out. Attack -12%.",
+        "rumour": ""
+      },
+      "away": {
+        "team": "Rangers",
+        "played": 8,
+        "gf": 11,
+        "ga": 5,
+        "attack_adj": 0.92,
+        "news": "CONFIRMED (BBC/LiveScore): Shankland, Chermiti, Yokota, Devlin out; Sterling cleared. Attack -8%.",
+        "rumour": ""
+      }
+    },
+    {
+      "id": "ERE-CAM-AZ",
+      "competition": "Eredivisie",
+      "kickoff_utc": "Sun 18 Oct 12:30",
+      "league_goals_per_match": 3.74,
+      "league_source": "Wikipedia 2026-27 Eredivisie: 269 goals in 72 matches",
+      "home": {
+        "team": "SC Cambuur",
+        "played": 8,
+        "gf": 11,
+        "ga": 19,
+        "attack_adj": 1.0,
+        "news": "CONFIRMED (club/Dutch press): captain Amofa long-term out and Visser out — both defensive, no attack adjustment. El Arguioui (4 goals) available.",
+        "rumour": ""
+      },
+      "away": {
+        "team": "AZ Alkmaar",
+        "played": 8,
+        "gf": 18,
+        "ga": 8,
+        "attack_adj": 0.95,
+        "news": "CONFIRMED (WhoScored/FotMob): Hornkamp, Smit, Resink out. Attack -5%.",
+        "rumour": ""
+      }
+    },
+    {
+      "id": "JPN-MAC-AVI",
+      "competition": "J1 League",
+      "kickoff_utc": "Sun 18 Oct 07:00",
+      "league_goals_per_match": 2.91,
+      "league_source": "Wikipedia 2026-27 J1 League: 262 goals in 90 matches",
+      "home": {
+        "team": "Machida Zelvia",
+        "played": 9,
+        "gf": 22,
+        "ga": 10,
+        "attack_adj": 1.0,
+        "news": "No confirmed attacking absence found in the sources checked.",
+        "rumour": ""
+      },
+      "away": {
+        "team": "Avispa Fukuoka",
+        "played": 9,
+        "gf": 11,
+        "ga": 13,
+        "attack_adj": 0.97,
+        "news": "CONFIRMED (Transfermarkt/previews): Fukushima (meniscus) out; Kamijima suspended (defender). Attack -3% only.",
+        "rumour": ""
+      }
+    },
+    {
+      "id": "TUR-ERZ-EYU",
+      "competition": "Super Lig",
+      "kickoff_utc": "Sat 17 Oct 10:30",
+      "league_goals_per_match": 2.92,
+      "league_source": "Wikipedia 2026-27 Super Lig: 108 goals in 37 matches (to 11 Sep; team records below are to matchweek 7)",
+      "home": {
+        "team": "Erzurumspor",
+        "played": 7,
+        "gf": 3,
+        "ga": 11,
+        "attack_adj": 1.0,
+        "news": "CONFIRMED (WhoScored/Sports Mole): no unavailable players reported.",
+        "rumour": ""
+      },
+      "away": {
+        "team": "Eyupspor",
+        "played": 7,
+        "gf": 2,
+        "ga": 20,
+        "attack_adj": 0.9,
+        "news": "CONFIRMED (Sports Mole/FotMob/Turkish press): Abdullahi suspended; Sabiri and El Yamiq out/doubtful. Attack -10%. Real event: 2 scored and 20 conceded in 7 league games.",
+        "rumour": ""
+      }
+    },
+    {
+      "id": "SWE-HAL-HAM",
+      "competition": "Allsvenskan",
+      "kickoff_utc": "Sun 18 Oct 14:30",
+      "league_goals_per_match": 2.94,
+      "league_source": "SoccerStats Allsvenskan 2026: 517 goals in 176 matches",
+      "home": {
+        "team": "Halmstad",
+        "played": 23,
+        "gf": 16,
+        "ga": 44,
+        "attack_adj": 1.0,
+        "news": "Real event: 16 scored in 23 games, bottom of the table. No confirmed attacking absence used.",
+        "rumour": "UNVERIFIED: one site reports a Boman red-card suspension while another lists him in the probable XI; he is a defender, no attack effect."
+      },
+      "away": {
+        "team": "Hammarby",
+        "played": 23,
+        "gf": 49,
+        "ga": 21,
+        "attack_adj": 1.0,
+        "news": "CONFIRMED (club via Fotbolltransfers): Amin Boudri out for the season (midfield); Victor Eriksson suspended (defender). No attack adjustment applied.",
+        "rumour": ""
+      }
+    },
+    {
+      "id": "BRA-BOT-CHA",
+      "competition": "Brazilian Serie A",
+      "kickoff_utc": "Sat 17 Oct 21:00",
+      "league_goals_per_match": 2.67,
+      "league_source": "Wikipedia 2026 Campeonato Brasileiro Serie A: 802 goals in 300 matches",
+      "home": {
+        "team": "Botafogo RJ",
+        "played": 30,
+        "gf": 43,
+        "ga": 48,
+        "attack_adj": 1.0,
+        "news": "CONFIRMED (Brazilian press/CBF preview): defensive absences Arthur Chaves and Lucas Monzon; attack not adjusted down.",
+        "rumour": ""
+      },
+      "away": {
+        "team": "Chapecoense",
+        "played": 29,
+        "gf": 30,
+        "ga": 61,
+        "attack_adj": 0.9,
+        "news": "CONFIRMED (ge.globo/Gazeta Esportiva): top scorer Marcinho suspended (third yellow); Heitor, Max, Rafael Carvalheira out. Attack -10%. Real event: bottom, 18 points, lost 4-0 and 4-1 in last two rounds.",
+        "rumour": ""
+      }
+    },
+    {
+      "id": "CH-01",
+      "competition": "EFL Championship",
+      "kickoff_utc": "Sat 17 Oct",
+      "league_goals_per_match": 2.93,
+      "league_source": "Wikipedia 2026-27 EFL Championship: 351 goals in 120 matches; team P/GF/GA from BBC Sport table (17 Oct 2026)",
+      "home": {
+        "team": "Middlesbrough",
+        "played": 10,
+        "gf": 20,
+        "ga": 14,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      },
+      "away": {
+        "team": "Cardiff City",
+        "played": 10,
+        "gf": 16,
+        "ga": 15,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      }
+    },
+    {
+      "id": "CH-02",
+      "competition": "EFL Championship",
+      "kickoff_utc": "Sat 17 Oct",
+      "league_goals_per_match": 2.93,
+      "league_source": "Wikipedia 2026-27 EFL Championship: 351 goals in 120 matches; team P/GF/GA from BBC Sport table (17 Oct 2026)",
+      "home": {
+        "team": "Millwall",
+        "played": 10,
+        "gf": 16,
+        "ga": 16,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      },
+      "away": {
+        "team": "Lincoln City",
+        "played": 10,
+        "gf": 7,
+        "ga": 17,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      }
+    },
+    {
+      "id": "CH-03",
+      "competition": "EFL Championship",
+      "kickoff_utc": "Sat 17 Oct",
+      "league_goals_per_match": 2.93,
+      "league_source": "Wikipedia 2026-27 EFL Championship: 351 goals in 120 matches; team P/GF/GA from BBC Sport table (17 Oct 2026)",
+      "home": {
+        "team": "Watford",
+        "played": 10,
+        "gf": 8,
+        "ga": 19,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      },
+      "away": {
+        "team": "Charlton Athletic",
+        "played": 10,
+        "gf": 10,
+        "ga": 13,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      }
+    },
+    {
+      "id": "CH-04",
+      "competition": "EFL Championship",
+      "kickoff_utc": "Sat 17 Oct",
+      "league_goals_per_match": 2.93,
+      "league_source": "Wikipedia 2026-27 EFL Championship: 351 goals in 120 matches; team P/GF/GA from BBC Sport table (17 Oct 2026)",
+      "home": {
+        "team": "Birmingham City",
+        "played": 10,
+        "gf": 17,
+        "ga": 11,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      },
+      "away": {
+        "team": "Queens Park Rangers",
+        "played": 10,
+        "gf": 15,
+        "ga": 9,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      }
+    },
+    {
+      "id": "CH-05",
+      "competition": "EFL Championship",
+      "kickoff_utc": "Sat 17 Oct",
+      "league_goals_per_match": 2.93,
+      "league_source": "Wikipedia 2026-27 EFL Championship: 351 goals in 120 matches; team P/GF/GA from BBC Sport table (17 Oct 2026)",
+      "home": {
+        "team": "Bristol City",
+        "played": 10,
+        "gf": 12,
+        "ga": 14,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      },
+      "away": {
+        "team": "Sheffield United",
+        "played": 10,
+        "gf": 14,
+        "ga": 14,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      }
+    },
+    {
+      "id": "CH-06",
+      "competition": "EFL Championship",
+      "kickoff_utc": "Sat 17 Oct",
+      "league_goals_per_match": 2.93,
+      "league_source": "Wikipedia 2026-27 EFL Championship: 351 goals in 120 matches; team P/GF/GA from BBC Sport table (17 Oct 2026)",
+      "home": {
+        "team": "Derby County",
+        "played": 10,
+        "gf": 9,
+        "ga": 19,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      },
+      "away": {
+        "team": "Stoke City",
+        "played": 10,
+        "gf": 17,
+        "ga": 16,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      }
+    },
+    {
+      "id": "CH-07",
+      "competition": "EFL Championship",
+      "kickoff_utc": "Sat 17 Oct",
+      "league_goals_per_match": 2.93,
+      "league_source": "Wikipedia 2026-27 EFL Championship: 351 goals in 120 matches; team P/GF/GA from BBC Sport table (17 Oct 2026)",
+      "home": {
+        "team": "Norwich City",
+        "played": 10,
+        "gf": 17,
+        "ga": 20,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      },
+      "away": {
+        "team": "Portsmouth",
+        "played": 9,
+        "gf": 12,
+        "ga": 13,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      }
+    },
+    {
+      "id": "CH-08",
+      "competition": "EFL Championship",
+      "kickoff_utc": "Sat 17 Oct",
+      "league_goals_per_match": 2.93,
+      "league_source": "Wikipedia 2026-27 EFL Championship: 351 goals in 120 matches; team P/GF/GA from BBC Sport table (17 Oct 2026)",
+      "home": {
+        "team": "Southampton",
+        "played": 10,
+        "gf": 21,
+        "ga": 10,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      },
+      "away": {
+        "team": "Bolton Wanderers",
+        "played": 10,
+        "gf": 15,
+        "ga": 18,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      }
+    },
+    {
+      "id": "CH-09",
+      "competition": "EFL Championship",
+      "kickoff_utc": "Sat 17 Oct",
+      "league_goals_per_match": 2.93,
+      "league_source": "Wikipedia 2026-27 EFL Championship: 351 goals in 120 matches; team P/GF/GA from BBC Sport table (17 Oct 2026)",
+      "home": {
+        "team": "Swansea City",
+        "played": 10,
+        "gf": 16,
+        "ga": 7,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      },
+      "away": {
+        "team": "West Ham United",
+        "played": 10,
+        "gf": 29,
+        "ga": 12,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      }
+    },
+    {
+      "id": "CH-10",
+      "competition": "EFL Championship",
+      "kickoff_utc": "Sat 17 Oct",
+      "league_goals_per_match": 2.93,
+      "league_source": "Wikipedia 2026-27 EFL Championship: 351 goals in 120 matches; team P/GF/GA from BBC Sport table (17 Oct 2026)",
+      "home": {
+        "team": "West Bromwich Albion",
+        "played": 10,
+        "gf": 12,
+        "ga": 10,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      },
+      "away": {
+        "team": "Blackburn Rovers",
+        "played": 10,
+        "gf": 15,
+        "ga": 13,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      }
+    },
+    {
+      "id": "CH-11",
+      "competition": "EFL Championship",
+      "kickoff_utc": "Sat 17 Oct",
+      "league_goals_per_match": 2.93,
+      "league_source": "Wikipedia 2026-27 EFL Championship: 351 goals in 120 matches; team P/GF/GA from BBC Sport table (17 Oct 2026)",
+      "home": {
+        "team": "Wrexham",
+        "played": 10,
+        "gf": 11,
+        "ga": 15,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      },
+      "away": {
+        "team": "Preston North End",
+        "played": 10,
+        "gf": 8,
+        "ga": 20,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      }
+    },
+    {
+      "id": "L1-01",
+      "competition": "EFL League One",
+      "kickoff_utc": "Sat 17 Oct",
+      "league_goals_per_match": 2.88,
+      "league_source": "Wikipedia 2026-27 EFL League One: 294 goals in 102 matches; team P/GF/GA from BBC Sport table (16 Oct 2026)",
+      "home": {
+        "team": "Milton Keynes Dons",
+        "played": 8,
+        "gf": 9,
+        "ga": 15,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      },
+      "away": {
+        "team": "Luton Town",
+        "played": 8,
+        "gf": 16,
+        "ga": 15,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      }
+    },
+    {
+      "id": "L1-02",
+      "competition": "EFL League One",
+      "kickoff_utc": "Sat 17 Oct",
+      "league_goals_per_match": 2.88,
+      "league_source": "Wikipedia 2026-27 EFL League One: 294 goals in 102 matches; team P/GF/GA from BBC Sport table (16 Oct 2026)",
+      "home": {
+        "team": "Peterborough United",
+        "played": 9,
+        "gf": 7,
+        "ga": 14,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      },
+      "away": {
+        "team": "Burton Albion",
+        "played": 10,
+        "gf": 14,
+        "ga": 16,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      }
+    },
+    {
+      "id": "L1-03",
+      "competition": "EFL League One",
+      "kickoff_utc": "Sat 17 Oct",
+      "league_goals_per_match": 2.88,
+      "league_source": "Wikipedia 2026-27 EFL League One: 294 goals in 102 matches; team P/GF/GA from BBC Sport table (16 Oct 2026)",
+      "home": {
+        "team": "Leicester City",
+        "played": 8,
+        "gf": 10,
+        "ga": 14,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      },
+      "away": {
+        "team": "Doncaster Rovers",
+        "played": 8,
+        "gf": 9,
+        "ga": 9,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      }
+    },
+    {
+      "id": "L1-04",
+      "competition": "EFL League One",
+      "kickoff_utc": "Sat 17 Oct",
+      "league_goals_per_match": 2.88,
+      "league_source": "Wikipedia 2026-27 EFL League One: 294 goals in 102 matches; team P/GF/GA from BBC Sport table (16 Oct 2026)",
+      "home": {
+        "team": "Plymouth Argyle",
+        "played": 10,
+        "gf": 18,
+        "ga": 12,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      },
+      "away": {
+        "team": "Huddersfield Town",
+        "played": 9,
+        "gf": 16,
+        "ga": 9,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      }
+    },
+    {
+      "id": "L1-05",
+      "competition": "EFL League One",
+      "kickoff_utc": "Sat 17 Oct",
+      "league_goals_per_match": 2.88,
+      "league_source": "Wikipedia 2026-27 EFL League One: 294 goals in 102 matches; team P/GF/GA from BBC Sport table (16 Oct 2026)",
+      "home": {
+        "team": "Barnsley",
+        "played": 8,
+        "gf": 8,
+        "ga": 15,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      },
+      "away": {
+        "team": "Cambridge United",
+        "played": 9,
+        "gf": 14,
+        "ga": 11,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      }
+    },
+    {
+      "id": "L1-06",
+      "competition": "EFL League One",
+      "kickoff_utc": "Sat 17 Oct",
+      "league_goals_per_match": 2.88,
+      "league_source": "Wikipedia 2026-27 EFL League One: 294 goals in 102 matches; team P/GF/GA from BBC Sport table (16 Oct 2026)",
+      "home": {
+        "team": "Leyton Orient",
+        "played": 9,
+        "gf": 13,
+        "ga": 11,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      },
+      "away": {
+        "team": "Blackpool",
+        "played": 8,
+        "gf": 13,
+        "ga": 14,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      }
+    },
+    {
+      "id": "L1-07",
+      "competition": "EFL League One",
+      "kickoff_utc": "Sat 17 Oct",
+      "league_goals_per_match": 2.88,
+      "league_source": "Wikipedia 2026-27 EFL League One: 294 goals in 102 matches; team P/GF/GA from BBC Sport table (16 Oct 2026)",
+      "home": {
+        "team": "Wycombe Wanderers",
+        "played": 9,
+        "gf": 14,
+        "ga": 20,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      },
+      "away": {
+        "team": "Notts County",
+        "played": 8,
+        "gf": 8,
+        "ga": 11,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      }
+    },
+    {
+      "id": "L1-08",
+      "competition": "EFL League One",
+      "kickoff_utc": "Sat 17 Oct",
+      "league_goals_per_match": 2.88,
+      "league_source": "Wikipedia 2026-27 EFL League One: 294 goals in 102 matches; team P/GF/GA from BBC Sport table (16 Oct 2026)",
+      "home": {
+        "team": "Stockport County",
+        "played": 9,
+        "gf": 20,
+        "ga": 11,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      },
+      "away": {
+        "team": "Bromley",
+        "played": 8,
+        "gf": 9,
+        "ga": 20,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      }
+    },
+    {
+      "id": "L1-09",
+      "competition": "EFL League One",
+      "kickoff_utc": "Sat 17 Oct",
+      "league_goals_per_match": 2.88,
+      "league_source": "Wikipedia 2026-27 EFL League One: 294 goals in 102 matches; team P/GF/GA from BBC Sport table (16 Oct 2026)",
+      "home": {
+        "team": "Sheffield Wednesday",
+        "played": 8,
+        "gf": 15,
+        "ga": 8,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      },
+      "away": {
+        "team": "AFC Wimbledon",
+        "played": 9,
+        "gf": 7,
+        "ga": 10,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      }
+    },
+    {
+      "id": "L1-10",
+      "competition": "EFL League One",
+      "kickoff_utc": "Sat 17 Oct",
+      "league_goals_per_match": 2.88,
+      "league_source": "Wikipedia 2026-27 EFL League One: 294 goals in 102 matches; team P/GF/GA from BBC Sport table (16 Oct 2026)",
+      "home": {
+        "team": "Bradford City",
+        "played": 9,
+        "gf": 8,
+        "ga": 5,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      },
+      "away": {
+        "team": "Stevenage",
+        "played": 8,
+        "gf": 12,
+        "ga": 8,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      }
+    },
+    {
+      "id": "L1-11",
+      "competition": "EFL League One",
+      "kickoff_utc": "Sat 17 Oct",
+      "league_goals_per_match": 2.88,
+      "league_source": "Wikipedia 2026-27 EFL League One: 294 goals in 102 matches; team P/GF/GA from BBC Sport table (16 Oct 2026)",
+      "home": {
+        "team": "Wigan Athletic",
+        "played": 8,
+        "gf": 5,
+        "ga": 13,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      },
+      "away": {
+        "team": "Reading",
+        "played": 9,
+        "gf": 22,
+        "ga": 11,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      }
+    },
+    {
+      "id": "L2-01",
+      "competition": "EFL League Two",
+      "kickoff_utc": "Sat 17 Oct",
+      "league_goals_per_match": 2.47,
+      "league_source": "Wikipedia 2026-27 EFL League Two: 282 goals in 114 matches; team P/GF/GA from BBC Sport table (13 Oct 2026)",
+      "home": {
+        "team": "Fleetwood Town",
+        "played": 10,
+        "gf": 10,
+        "ga": 11,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      },
+      "away": {
+        "team": "Rotherham United",
+        "played": 10,
+        "gf": 12,
+        "ga": 16,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      }
+    },
+    {
+      "id": "L2-02",
+      "competition": "EFL League Two",
+      "kickoff_utc": "Sat 17 Oct",
+      "league_goals_per_match": 2.47,
+      "league_source": "Wikipedia 2026-27 EFL League Two: 282 goals in 114 matches; team P/GF/GA from BBC Sport table (13 Oct 2026)",
+      "home": {
+        "team": "Shrewsbury Town",
+        "played": 10,
+        "gf": 9,
+        "ga": 15,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      },
+      "away": {
+        "team": "Bristol Rovers",
+        "played": 10,
+        "gf": 15,
+        "ga": 17,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      }
+    },
+    {
+      "id": "L2-03",
+      "competition": "EFL League Two",
+      "kickoff_utc": "Sat 17 Oct",
+      "league_goals_per_match": 2.47,
+      "league_source": "Wikipedia 2026-27 EFL League Two: 282 goals in 114 matches; team P/GF/GA from BBC Sport table (13 Oct 2026)",
+      "home": {
+        "team": "Oldham Athletic",
+        "played": 9,
+        "gf": 9,
+        "ga": 13,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      },
+      "away": {
+        "team": "Cheltenham Town",
+        "played": 10,
+        "gf": 16,
+        "ga": 16,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      }
+    },
+    {
+      "id": "L2-04",
+      "competition": "EFL League Two",
+      "kickoff_utc": "Sat 17 Oct",
+      "league_goals_per_match": 2.47,
+      "league_source": "Wikipedia 2026-27 EFL League Two: 282 goals in 114 matches; team P/GF/GA from BBC Sport table (13 Oct 2026)",
+      "home": {
+        "team": "Accrington Stanley",
+        "played": 10,
+        "gf": 13,
+        "ga": 14,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      },
+      "away": {
+        "team": "Gillingham",
+        "played": 10,
+        "gf": 15,
+        "ga": 10,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      }
+    },
+    {
+      "id": "L2-05",
+      "competition": "EFL League Two",
+      "kickoff_utc": "Sat 17 Oct",
+      "league_goals_per_match": 2.47,
+      "league_source": "Wikipedia 2026-27 EFL League Two: 282 goals in 114 matches; team P/GF/GA from BBC Sport table (13 Oct 2026)",
+      "home": {
+        "team": "Grimsby Town",
+        "played": 10,
+        "gf": 13,
+        "ga": 11,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      },
+      "away": {
+        "team": "Northampton Town",
+        "played": 8,
+        "gf": 4,
+        "ga": 7,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      }
+    },
+    {
+      "id": "L2-06",
+      "competition": "EFL League Two",
+      "kickoff_utc": "Sat 17 Oct",
+      "league_goals_per_match": 2.47,
+      "league_source": "Wikipedia 2026-27 EFL League Two: 282 goals in 114 matches; team P/GF/GA from BBC Sport table (13 Oct 2026)",
+      "home": {
+        "team": "Colchester United",
+        "played": 9,
+        "gf": 10,
+        "ga": 13,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      },
+      "away": {
+        "team": "Exeter City",
+        "played": 10,
+        "gf": 6,
+        "ga": 6,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      }
+    },
+    {
+      "id": "L2-07",
+      "competition": "EFL League Two",
+      "kickoff_utc": "Sat 17 Oct",
+      "league_goals_per_match": 2.47,
+      "league_source": "Wikipedia 2026-27 EFL League Two: 282 goals in 114 matches; team P/GF/GA from BBC Sport table (13 Oct 2026)",
+      "home": {
+        "team": "Tranmere Rovers",
+        "played": 10,
+        "gf": 13,
+        "ga": 13,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      },
+      "away": {
+        "team": "Barnet",
+        "played": 8,
+        "gf": 20,
+        "ga": 11,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      }
+    },
+    {
+      "id": "L2-08",
+      "competition": "EFL League Two",
+      "kickoff_utc": "Sat 17 Oct",
+      "league_goals_per_match": 2.47,
+      "league_source": "Wikipedia 2026-27 EFL League Two: 282 goals in 114 matches; team P/GF/GA from BBC Sport table (13 Oct 2026)",
+      "home": {
+        "team": "Port Vale",
+        "played": 8,
+        "gf": 4,
+        "ga": 9,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      },
+      "away": {
+        "team": "Chesterfield",
+        "played": 10,
+        "gf": 17,
+        "ga": 14,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      }
+    },
+    {
+      "id": "L2-09",
+      "competition": "EFL League Two",
+      "kickoff_utc": "Sat 17 Oct",
+      "league_goals_per_match": 2.47,
+      "league_source": "Wikipedia 2026-27 EFL League Two: 282 goals in 114 matches; team P/GF/GA from BBC Sport table (13 Oct 2026)",
+      "home": {
+        "team": "Newport County",
+        "played": 10,
+        "gf": 13,
+        "ga": 12,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      },
+      "away": {
+        "team": "York City",
+        "played": 9,
+        "gf": 17,
+        "ga": 11,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      }
+    },
+    {
+      "id": "L2-10",
+      "competition": "EFL League Two",
+      "kickoff_utc": "Sat 17 Oct",
+      "league_goals_per_match": 2.47,
+      "league_source": "Wikipedia 2026-27 EFL League Two: 282 goals in 114 matches; team P/GF/GA from BBC Sport table (13 Oct 2026)",
+      "home": {
+        "team": "Salford City",
+        "played": 10,
+        "gf": 15,
+        "ga": 10,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      },
+      "away": {
+        "team": "Crawley Town",
+        "played": 8,
+        "gf": 8,
+        "ga": 15,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      }
+    },
+    {
+      "id": "L2-11",
+      "competition": "EFL League Two",
+      "kickoff_utc": "Sat 17 Oct",
+      "league_goals_per_match": 2.47,
+      "league_source": "Wikipedia 2026-27 EFL League Two: 282 goals in 114 matches; team P/GF/GA from BBC Sport table (13 Oct 2026)",
+      "home": {
+        "team": "Crewe Alexandra",
+        "played": 10,
+        "gf": 12,
+        "ga": 7,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      },
+      "away": {
+        "team": "Rochdale",
+        "played": 10,
+        "gf": 11,
+        "ga": 12,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      }
+    },
+    {
+      "id": "L2-12",
+      "competition": "EFL League Two",
+      "kickoff_utc": "Sat 17 Oct",
+      "league_goals_per_match": 2.47,
+      "league_source": "Wikipedia 2026-27 EFL League Two: 282 goals in 114 matches; team P/GF/GA from BBC Sport table (13 Oct 2026)",
+      "home": {
+        "team": "Swindon Town",
+        "played": 10,
+        "gf": 9,
+        "ga": 14,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      },
+      "away": {
+        "team": "Walsall",
+        "played": 9,
+        "gf": 12,
+        "ga": 6,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      }
+    },
+    {
+      "id": "SB-01",
+      "competition": "Serie B",
+      "kickoff_utc": "Sat 17 Oct",
+      "league_goals_per_match": 2.68,
+      "league_source": "Wikipedia 2026-27 Serie B: 161 goals in 60 matches; team P/GF/GA from Wikipedia league table (11 Oct 2026)",
+      "home": {
+        "team": "Padova",
+        "played": 6,
+        "gf": 5,
+        "ga": 8,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      },
+      "away": {
+        "team": "Virtus Entella",
+        "played": 6,
+        "gf": 8,
+        "ga": 7,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      }
+    },
+    {
+      "id": "SB-02",
+      "competition": "Serie B",
+      "kickoff_utc": "Sat 17 Oct",
+      "league_goals_per_match": 2.68,
+      "league_source": "Wikipedia 2026-27 Serie B: 161 goals in 60 matches; team P/GF/GA from Wikipedia league table (11 Oct 2026)",
+      "home": {
+        "team": "Benevento",
+        "played": 6,
+        "gf": 8,
+        "ga": 5,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      },
+      "away": {
+        "team": "Vicenza",
+        "played": 6,
+        "gf": 7,
+        "ga": 13,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      }
+    },
+    {
+      "id": "SB-03",
+      "competition": "Serie B",
+      "kickoff_utc": "Sat 17 Oct",
+      "league_goals_per_match": 2.68,
+      "league_source": "Wikipedia 2026-27 Serie B: 161 goals in 60 matches; team P/GF/GA from Wikipedia league table (11 Oct 2026)",
+      "home": {
+        "team": "Ascoli",
+        "played": 6,
+        "gf": 7,
+        "ga": 4,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      },
+      "away": {
+        "team": "Empoli",
+        "played": 6,
+        "gf": 6,
+        "ga": 10,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      }
+    },
+    {
+      "id": "SB-04",
+      "competition": "Serie B",
+      "kickoff_utc": "Sat 17 Oct",
+      "league_goals_per_match": 2.68,
+      "league_source": "Wikipedia 2026-27 Serie B: 161 goals in 60 matches; team P/GF/GA from Wikipedia league table (11 Oct 2026)",
+      "home": {
+        "team": "Carrarese",
+        "played": 6,
+        "gf": 4,
+        "ga": 6,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      },
+      "away": {
+        "team": "Modena",
+        "played": 6,
+        "gf": 11,
+        "ga": 6,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      }
+    },
+    {
+      "id": "SB-05",
+      "competition": "Serie B",
+      "kickoff_utc": "Sat 17 Oct",
+      "league_goals_per_match": 2.68,
+      "league_source": "Wikipedia 2026-27 Serie B: 161 goals in 60 matches; team P/GF/GA from Wikipedia league table (11 Oct 2026)",
+      "home": {
+        "team": "Mantova",
+        "played": 6,
+        "gf": 13,
+        "ga": 6,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      },
+      "away": {
+        "team": "Palermo",
+        "played": 6,
+        "gf": 14,
+        "ga": 7,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      }
+    },
+    {
+      "id": "SB-06",
+      "competition": "Serie B",
+      "kickoff_utc": "Sat 17 Oct",
+      "league_goals_per_match": 2.68,
+      "league_source": "Wikipedia 2026-27 Serie B: 161 goals in 60 matches; team P/GF/GA from Wikipedia league table (11 Oct 2026)",
+      "home": {
+        "team": "Pisa",
+        "played": 6,
+        "gf": 11,
+        "ga": 8,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      },
+      "away": {
+        "team": "Cremonese",
+        "played": 6,
+        "gf": 5,
+        "ga": 7,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      }
+    },
+    {
+      "id": "SB-07",
+      "competition": "Serie B",
+      "kickoff_utc": "Sun 18 Oct",
+      "league_goals_per_match": 2.68,
+      "league_source": "Wikipedia 2026-27 Serie B: 161 goals in 60 matches; team P/GF/GA from Wikipedia league table (11 Oct 2026)",
+      "home": {
+        "team": "Juve Stabia",
+        "played": 6,
+        "gf": 5,
+        "ga": 8,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      },
+      "away": {
+        "team": "Sudtirol",
+        "played": 6,
+        "gf": 9,
+        "ga": 3,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      }
+    },
+    {
+      "id": "SB-08",
+      "competition": "Serie B",
+      "kickoff_utc": "Sun 18 Oct",
+      "league_goals_per_match": 2.68,
+      "league_source": "Wikipedia 2026-27 Serie B: 161 goals in 60 matches; team P/GF/GA from Wikipedia league table (11 Oct 2026)",
+      "home": {
+        "team": "Cesena",
+        "played": 6,
+        "gf": 7,
+        "ga": 8,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      },
+      "away": {
+        "team": "Avellino",
+        "played": 6,
+        "gf": 11,
+        "ga": 7,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      }
+    },
+    {
+      "id": "SB-09",
+      "competition": "Serie B",
+      "kickoff_utc": "Sun 18 Oct",
+      "league_goals_per_match": 2.68,
+      "league_source": "Wikipedia 2026-27 Serie B: 161 goals in 60 matches; team P/GF/GA from Wikipedia league table (11 Oct 2026)",
+      "home": {
+        "team": "Sampdoria",
+        "played": 6,
+        "gf": 6,
+        "ga": 13,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      },
+      "away": {
+        "team": "Arezzo",
+        "played": 6,
+        "gf": 6,
+        "ga": 13,
+        "news": "Form/table data only: no club-confirmed attacking absence was used for this lower-league expansion, so no news adjustment is applied (1.00)."
+      }
+    }
+  ]
+}
