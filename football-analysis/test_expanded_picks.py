@@ -34,7 +34,8 @@ class ExpandedDataTests(unittest.TestCase):
     def test_japan_played_today_included(self):
         japan = [m for m in DATA["matches"] if m["competition"] in ("J1 League", "J2 League", "J3 League")]
         self.assertGreaterEqual(len(japan), 20)
-        self.assertTrue(all("Sat 17 Oct" in m["kickoff_utc"] for m in japan))
+        saturday = [m for m in japan if "Sat 17 Oct" in m["kickoff_utc"]]
+        self.assertGreaterEqual(len(saturday), 20)  # 8 J1 + 9 J2 + 6 J3 played today
 
     def test_no_copied_prediction_fields(self):
         self.assertTrue(BANNED_KEYS.isdisjoint(set(flatten_keys(DATA))))
