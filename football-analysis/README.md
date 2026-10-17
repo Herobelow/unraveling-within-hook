@@ -150,3 +150,17 @@ as model inputs. League rates: J1 2.91, J2 2.60 (260/100), J3 2.89 (289/100).
 No club-confirmed news adjustment is applied to the new Japanese teams (1.00).
 
 Run: `python independent_picks.py --input data/independent_inputs_54plus_japan_2026-10-17_18.json --pdf independent_goal_picks_japan_2026-10-17.pdf --csv independent_goal_picks_japan.csv`
+
+## Match-TOTAL reading (confirmed by user 17 Oct 2026) — CURRENT
+
+The user confirmed the intended meaning is the **combined match total**:
+OVER = both teams together score a total of 2 goals or more; BELOW = both teams
+together score a total of 3 goals or below. This replaces the single-team
+reading used in the earlier sheets (they remain in the repo for audit).
+
+`match_total_picks.py` sums the two team xGs from the independent model
+(77-match Japan-expanded input) and treats the match total as Poisson.
+Bars: P(total >= 2) >= 85% and P(total <= 3) >= 85%. Result: **15 OVER picks
+and 16 BELOW picks**; P(total >= 3) ("more than 2") is printed alongside.
+Outputs: `output/match_total_goal_picks_2026-10-17.pdf`, `output/match_total_goal_picks.csv`.
+Run: `python match_total_picks.py`
