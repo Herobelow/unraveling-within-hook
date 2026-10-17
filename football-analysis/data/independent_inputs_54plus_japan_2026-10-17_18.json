@@ -283,7 +283,7 @@
     {
       "id": "CH-01",
       "competition": "EFL Championship",
-      "kickoff_utc": "Sat 17 Oct",
+      "kickoff_utc": "Sat 17 Oct 12:30 BST",
       "league_goals_per_match": 2.93,
       "league_source": "Wikipedia 2026-27 EFL Championship: 351 goals in 120 matches; team P/GF/GA from BBC Sport table (17 Oct 2026)",
       "home": {
@@ -325,7 +325,7 @@
     {
       "id": "CH-03",
       "competition": "EFL Championship",
-      "kickoff_utc": "Sat 17 Oct",
+      "kickoff_utc": "Sat 17 Oct 12:30 BST",
       "league_goals_per_match": 2.93,
       "league_source": "Wikipedia 2026-27 EFL Championship: 351 goals in 120 matches; team P/GF/GA from BBC Sport table (17 Oct 2026)",
       "home": {
@@ -409,7 +409,7 @@
     {
       "id": "CH-07",
       "competition": "EFL Championship",
-      "kickoff_utc": "Sat 17 Oct",
+      "kickoff_utc": "Sat 17 Oct 15:00 BST",
       "league_goals_per_match": 2.93,
       "league_source": "Wikipedia 2026-27 EFL Championship: 351 goals in 120 matches; team P/GF/GA from BBC Sport table (17 Oct 2026)",
       "home": {
@@ -430,7 +430,7 @@
     {
       "id": "CH-08",
       "competition": "EFL Championship",
-      "kickoff_utc": "Sat 17 Oct",
+      "kickoff_utc": "Sat 17 Oct 15:00 BST",
       "league_goals_per_match": 2.93,
       "league_source": "Wikipedia 2026-27 EFL Championship: 351 goals in 120 matches; team P/GF/GA from BBC Sport table (17 Oct 2026)",
       "home": {
@@ -514,7 +514,7 @@
     {
       "id": "L1-01",
       "competition": "EFL League One",
-      "kickoff_utc": "Sat 17 Oct",
+      "kickoff_utc": "Sat 17 Oct 12:30 BST",
       "league_goals_per_match": 2.88,
       "league_source": "Wikipedia 2026-27 EFL League One: 294 goals in 102 matches; team P/GF/GA from BBC Sport table (16 Oct 2026)",
       "home": {
@@ -661,7 +661,7 @@
     {
       "id": "L1-08",
       "competition": "EFL League One",
-      "kickoff_utc": "Sat 17 Oct",
+      "kickoff_utc": "Sat 17 Oct 15:00 BST",
       "league_goals_per_match": 2.88,
       "league_source": "Wikipedia 2026-27 EFL League One: 294 goals in 102 matches; team P/GF/GA from BBC Sport table (16 Oct 2026)",
       "home": {
@@ -703,7 +703,7 @@
     {
       "id": "L1-10",
       "competition": "EFL League One",
-      "kickoff_utc": "Sat 17 Oct",
+      "kickoff_utc": "Sat 17 Oct 15:00 BST",
       "league_goals_per_match": 2.88,
       "league_source": "Wikipedia 2026-27 EFL League One: 294 goals in 102 matches; team P/GF/GA from BBC Sport table (16 Oct 2026)",
       "home": {
@@ -829,7 +829,7 @@
     {
       "id": "L2-05",
       "competition": "EFL League Two",
-      "kickoff_utc": "Sat 17 Oct",
+      "kickoff_utc": "Sat 17 Oct 15:00 BST",
       "league_goals_per_match": 2.47,
       "league_source": "Wikipedia 2026-27 EFL League Two: 282 goals in 114 matches; team P/GF/GA from BBC Sport table (13 Oct 2026)",
       "home": {
@@ -850,7 +850,7 @@
     {
       "id": "L2-06",
       "competition": "EFL League Two",
-      "kickoff_utc": "Sat 17 Oct",
+      "kickoff_utc": "Sat 17 Oct 15:00 BST",
       "league_goals_per_match": 2.47,
       "league_source": "Wikipedia 2026-27 EFL League Two: 282 goals in 114 matches; team P/GF/GA from BBC Sport table (13 Oct 2026)",
       "home": {
@@ -871,7 +871,7 @@
     {
       "id": "L2-07",
       "competition": "EFL League Two",
-      "kickoff_utc": "Sat 17 Oct",
+      "kickoff_utc": "Sat 17 Oct 15:00 BST",
       "league_goals_per_match": 2.47,
       "league_source": "Wikipedia 2026-27 EFL League Two: 282 goals in 114 matches; team P/GF/GA from BBC Sport table (13 Oct 2026)",
       "home": {
@@ -892,7 +892,7 @@
     {
       "id": "L2-08",
       "competition": "EFL League Two",
-      "kickoff_utc": "Sat 17 Oct",
+      "kickoff_utc": "Sat 17 Oct 15:00 BST",
       "league_goals_per_match": 2.47,
       "league_source": "Wikipedia 2026-27 EFL League Two: 282 goals in 114 matches; team P/GF/GA from BBC Sport table (13 Oct 2026)",
       "home": {
@@ -955,7 +955,7 @@
     {
       "id": "L2-11",
       "competition": "EFL League Two",
-      "kickoff_utc": "Sat 17 Oct",
+      "kickoff_utc": "Sat 17 Oct 15:00 BST",
       "league_goals_per_match": 2.47,
       "league_source": "Wikipedia 2026-27 EFL League Two: 282 goals in 114 matches; team P/GF/GA from BBC Sport table (13 Oct 2026)",
       "home": {
@@ -976,7 +976,7 @@
     {
       "id": "L2-12",
       "competition": "EFL League Two",
-      "kickoff_utc": "Sat 17 Oct",
+      "kickoff_utc": "Sat 17 Oct 15:00 BST",
       "league_goals_per_match": 2.47,
       "league_source": "Wikipedia 2026-27 EFL League Two: 282 goals in 114 matches; team P/GF/GA from BBC Sport table (13 Oct 2026)",
       "home": {
@@ -997,7 +997,7 @@
     {
       "id": "SB-01",
       "competition": "Serie B",
-      "kickoff_utc": "Sat 17 Oct",
+      "kickoff_utc": "Sat 17 Oct 15:00 CEST",
       "league_goals_per_match": 2.68,
       "league_source": "Wikipedia 2026-27 Serie B: 161 goals in 60 matches; team P/GF/GA from Wikipedia league table (11 Oct 2026)",
       "home": {
@@ -1060,7 +1060,7 @@
     {
       "id": "SB-04",
       "competition": "Serie B",
-      "kickoff_utc": "Sat 17 Oct",
+      "kickoff_utc": "Sat 17 Oct 15:00 CEST",
       "league_goals_per_match": 2.68,
       "league_source": "Wikipedia 2026-27 Serie B: 161 goals in 60 matches; team P/GF/GA from Wikipedia league table (11 Oct 2026)",
       "home": {
@@ -1081,7 +1081,7 @@
     {
       "id": "SB-05",
       "competition": "Serie B",
-      "kickoff_utc": "Sat 17 Oct",
+      "kickoff_utc": "Sat 17 Oct 17:15 CEST",
       "league_goals_per_match": 2.68,
       "league_source": "Wikipedia 2026-27 Serie B: 161 goals in 60 matches; team P/GF/GA from Wikipedia league table (11 Oct 2026)",
       "home": {
@@ -1123,7 +1123,7 @@
     {
       "id": "SB-07",
       "competition": "Serie B",
-      "kickoff_utc": "Sun 18 Oct",
+      "kickoff_utc": "Sun 18 Oct 15:00 CEST",
       "league_goals_per_match": 2.68,
       "league_source": "Wikipedia 2026-27 Serie B: 161 goals in 60 matches; team P/GF/GA from Wikipedia league table (11 Oct 2026)",
       "home": {
