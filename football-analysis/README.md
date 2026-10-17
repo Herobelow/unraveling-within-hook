@@ -105,3 +105,16 @@ exclusions and their reasons) and `output/verified_goal_picks.csv`.
 
 Run: `/tmp/pdfenv/bin/python verified_picks.py` (needs reportlab; `--no-pdf` for CSV only).
 Sports4Cast's own accuracy record could not be verified, so its numbers are one input, not proof.
+
+## Independent real-event predictions (current sheet — supersedes the two above)
+
+`independent_picks.py` uses **no** prediction, odds or xG figure from any prediction
+site. Inputs (`data/independent_inputs_2026-10-17_18.json`) are real events only:
+goals scored/conceded this season, each league's goals-per-match average, and team
+news. Rumours are labelled UNVERIFIED and carry no adjustment unless a club confirms
+them. The earlier `team_goal_picks` and `verified_picks` sheets used copied site
+baselines and are **superseded — do not use them**.
+
+Run: `/tmp/pdfenv/bin/python independent_picks.py` (reportlab needed for the PDF).
+Outputs: `output/independent_goal_picks_2026-10-17.pdf`, `output/independent_goal_picks.csv`.
+On real-event data alone, no team clears the 55% over-2 bar; 12 teams clear the 93% below-3 bar.
