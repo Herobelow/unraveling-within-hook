@@ -1,2 +1,6 @@
 __pycache__/
 *.pyc
+
+# generated video render artifacts (rebuild with render_video.py)
+english-grammar-mistakes-video/*.mp4
+english-grammar-mistakes-video/*.wav
